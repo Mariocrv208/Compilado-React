@@ -1,15 +1,34 @@
 import { Response, Request } from "express";
-const fs = require('fs')
+import Errores from '../../utils/Interpreter/Arbol/Exceptions/Error';
+import Arbol from "../../utils/Interpreter/Arbol/Simbolos/Arbol";
+import SymbolTable from "../../utils/Interpreter/Arbol/Simbolos/TablaSimbolos";
+import { Instruccion } from "../../utils/Interpreter/Arbol/abstract/Instruccion";
 
-const { template } = require('../../../public/index.html')
+export let listaErrores: Array<Errores> = [];
 
 export const parse = (req: Request & unknown, res: Response): void => {
-    fs.readFile('./public/index.html', function(err: any, html:any){
-        if(err){
-            throw err
-        }
+    listaErrores = new Array<Errores>();
+    let parser = require('../../utils/Interpreter/Arbol/analizador');
+    const { peticion } = req.body;
 
-        res.write(html)
-        res.end()
-    })
+    try { 
+      let ast = new Arbol(parser.parse(peticion));
+      var tabla = new SymbolTable();
+      ast.settablaGlobal(tabla);
+      for (let i of ast.getinstrucciones()) {
+        if (i instanceof Errores) {
+          listaErrores.push(i);
+          ast.actualizaConsola((<Errores>i).returnError());
+        }
+        var resultador = i instanceof Instruccion ? i.interpretar(ast, tabla) : new Errores("ERROR SEMANTICO", "no se puede ejecutar la instruccion", 0, 0);
+        if (resultador instanceof Errores) {
+          listaErrores.push(resultador);
+          ast.actualizaConsola((<Errores>resultador).returnError());
+        }        
+      }
+      res.json({ consola: ast.getconsola(), errores: listaErrores, simbolos: [] });
+    } catch (err) {
+        console.log(err)
+        res.json({ consola: '', error: err, errores: listaErrores, simbolos: [] });
+    }
 }
