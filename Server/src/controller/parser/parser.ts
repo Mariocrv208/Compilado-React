@@ -1,8 +1,8 @@
 import { Response, Request } from "express";
+import { Instruccion } from "../../utils/Interpreter/Arbol/abstract/Instruccion";
 import Errores from '../../utils/Interpreter/Arbol/Exceptions/Error';
 import Arbol from "../../utils/Interpreter/Arbol/Simbolos/Arbol";
 import SymbolTable from "../../utils/Interpreter/Arbol/Simbolos/TablaSimbolos";
-import { Instruccion } from "../../utils/Interpreter/Arbol/abstract/Instruccion";
 
 export let listaErrores: Array<Errores> = [];
 
@@ -20,7 +20,7 @@ export const parse = (req: Request & unknown, res: Response): void => {
           listaErrores.push(i);
           ast.actualizaConsola((<Errores>i).returnError());
         }
-        var resultador = i instanceof Instruccion ? i.interpretar(ast, tabla) : new Errores("ERROR SEMANTICO", "no se puede ejecutar la instruccion", 0, 0);
+        var resultador = i instanceof Instruccion ? i.interpretar(ast, tabla) : new Errores("SEMANATICO", "La ejecucion no se pudo ejecutar", 0,0);
         if (resultador instanceof Errores) {
           listaErrores.push(resultador);
           ast.actualizaConsola((<Errores>resultador).returnError());

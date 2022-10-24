@@ -3,12 +3,10 @@
     const controller = require('../../../controller/parser/parser');
     const errores = require('./Exceptions/Error');
     const nativo = require('./Expresiones/Nativa');
-    const aritmetico = require('./Expresiones/Aritmetica');
-    const relacional = require('./Expresiones/Relacional');
-    const logica = require('./Expresiones/Logica');
     const Tipo = require('./Simbolos/Tipo');
     const impresion = require('./Instrucciones/Imprimir');    
-    const declaracion = require('./Instrucciones/Declaracion')
+    const declaracion = require('./Instrucciones/Declaracion');
+    const aritmetico = require('./Expresiones/Aritmetica')
 %}
 %lex 
 
@@ -18,10 +16,6 @@
 %%
 "imprimir"      return 'RESPRINT';
 "entero"        return 'RESINT';
-
-">"             return 'MAYOR_QUE';
-
-"||"            return 'OR';
 
 "="             return 'IGUAL';
 "+"             return 'MAS';
@@ -40,9 +34,7 @@
 .                           return 'INVALID'
 
 /lex
-
-%left 'MAS'
-%left 'MAYOR_QUE'
+%left 'MAS'     
 
 %start INIT
 //Inicio
@@ -60,35 +52,22 @@ INSTRUCCIONES :
 INSTRUCCION :
     IMPRIMIR                {$$=$1;}
     | DECLARACION           {$$=$1;}
-    | INVALID               {controller.listaErrores.push(new errores.default('ERROR LEXICO',$1,@1.first_line,@1.first_column));}
-    | error  PTCOMA         {controller.listaErrores.push(new errores.default(`ERROR SINTACTICO`,"Se esperaba token",@1.first_line,@1.first_column));}
-;
-
-DECLARACION:
-    RESINT IDENTIFICADOR IGUAL EXPRESION PTCOMA {$$=new declaracion.default($2, new Tipo.default(Tipo.DataType.ENTERO), $4, @1.first_line, @1.first_column);}
-;
-
-IMPRIMIBLE:
-    EXPRESION {$$=$1;}  
-    | EXPRESION_RELACIONAL {$$=$1;}  
-    | EXPRESION_LOGICA {$$=$1;}  
+    | INVALID               {controller.listaErrores.push(new errores.default('ERROR LEXICO', $1, @1.first_line, @1.first_column));}
+    | error  PTCOMA         {controller.listaErrores.push(new errores.default('ERROR SINTACITICO',"Se esperaba un token", @1.first_line, @1.first_column));}
 ;
 
 IMPRIMIR : 
-    RESPRINT PARABRE IMPRIMIBLE PARCIERRA PTCOMA {$$=new impresion.default($3,@1.first_line,@1.first_column);}
+    RESPRINT PARABRE EXPRESION PARCIERRA PTCOMA {$$=new impresion.default($3,@1.first_line,@1.first_column);}
 ;
 
-EXPRESION : 
-    EXPRESION MAS EXPRESION {$$ = new aritmetico.default(aritmetico.tipoOp.SUMA, $1, $3, @1.first_line, @1.first_column);}
-    | IDENTIFICADOR {$$ = new nativo.default(new Tipo.DataType.IDENTIFICADOR, $1, @1.first_line, @1.first_column);}
-    | ENTERO {$$= new nativo.default(new Tipo.DataType.ENTERO,$1, @1.first_line, @1.first_column);}
-    | CADENA {$$= new nativo.default(new Tipo.DataType.CADENA,$1, @1.first_line, @1.first_column);}
+DECLARACION:
+    RESINT IDENTIFICADOR IGUAL EXPRESION PTCOMA {$$=new declaracion.default($2, new Tipo.default(Tipo.TipoDato.ENTERO), $4, @1.first_line, @1.first_column);}
 ;
 
-EXPRESION_RELACIONAL :
-    EXPRESION MAYOR_QUE EXPRESION {$$ = new relacional.default(relacional.tipoOp.MAYOR, $1, $3, @1.first_line, @1.first_column);}
+EXPRESION :
+    EXPRESION MAS EXPRESION {$$ = new aritmetico.default(aritmetico.tipoOp.SUMA, $1, $3, @1.first_line, @1.first_column)}
+    |IDENTIFICADOR {$$= new nativo.default(new Tipo.default(Tipo.TipoDato.IDENTIFICADOR), $1, @1.first_line, @1.first_column);}
+    | ENTERO {$$= new nativo.default(new Tipo.default(Tipo.TipoDato.ENTERO),$1, @1.first_line, @1.first_column);}
+    | CADENA {$$= new nativo.default(new Tipo.default(Tipo.TipoDato.CADENA),$1, @1.first_line, @1.first_column);}
 ;
 
-EXPRESION_LOGICA :
-    EXPRESION_RELACIONAL OR EXPRESION_RELACIONAL {$$ = new logica.default(logica.tipoOp.OR, $1, $3, @1.first_line, @1.first_column);}
-;

@@ -27,25 +27,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Instruccion_1 = require("../abstract/Instruccion");
+const Simbolos_1 = __importDefault(require("../Simbolos/Simbolos"));
 const Tipo_1 = __importStar(require("../Simbolos/Tipo"));
-const get_1 = __importDefault(require("lodash/get"));
-class Nativa extends Instruccion_1.Instruccion {
-    constructor(tipo, valor, fila, columna) {
-        super(tipo, fila, columna);
+class Declaracion extends Instruccion_1.Instruccion {
+    constructor(id, tipo, valor, linea, columna) {
+        super(new Tipo_1.default(Tipo_1.TipoDato.INDEFINIDO), linea, columna);
+        this.id = id;
+        this.tipo = tipo;
         this.valor = valor;
     }
     interpretar(arbol, tabla) {
-        if (this.tipoDato.getTipo() === Tipo_1.TipoDato.ENTERO) {
-            return this.valor;
-        }
-        else if (this.tipoDato.getTipo() === Tipo_1.TipoDato.CADENA) {
-            return this.valor.toString();
-        }
-        else if (this.tipoDato.getTipo() === Tipo_1.TipoDato.IDENTIFICADOR) {
-            let value = tabla.getValor(this.valor);
-            this.tipoDato = (0, get_1.default)(value, 'tipo', new Tipo_1.default(Tipo_1.TipoDato.INDEFINIDO));
-            return (0, get_1.default)(value, 'valor');
-        }
+        tabla.setValor(this.id, new Simbolos_1.default(this.tipo, this.id, this.valor.interpretar(arbol, tabla)));
+        return null;
     }
 }
-exports.default = Nativa;
+exports.default = Declaracion;

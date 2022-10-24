@@ -7,8 +7,8 @@ import get from 'lodash/get';
 export default class Nativa extends Instruccion {
   valor: any;
 
-  constructor(tipo: TipoDato, valor: any, fila: number, columna: number) {
-    super(new Tipo(tipo), fila, columna);
+  constructor(tipo: Tipo, valor: any, fila: number, columna: number) {
+    super(tipo, fila, columna);
     this.valor = valor;
   }
 

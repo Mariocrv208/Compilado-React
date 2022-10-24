@@ -22,30 +22,29 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const Instruccion_1 = require("../abstract/Instruccion");
 const Tipo_1 = __importStar(require("../Simbolos/Tipo"));
-const get_1 = __importDefault(require("lodash/get"));
-class Nativa extends Instruccion_1.Instruccion {
-    constructor(tipo, valor, fila, columna) {
-        super(tipo, fila, columna);
-        this.valor = valor;
+const Aritmetica_1 = require("./Aritmetica");
+class Aritmetica extends Instruccion_1.Instruccion {
+    constructor(tipo, OpIzq, opDer, fila, columna) {
+        super(new Tipo_1.default(Tipo_1.TipoDato.INDEFINIDO), fila, columna);
+        this.tipo = tipo;
+        this.operacionIzq = OpIzq;
+        this.operacionDer = opDer;
     }
     interpretar(arbol, tabla) {
-        if (this.tipoDato.getTipo() === Tipo_1.TipoDato.ENTERO) {
-            return this.valor;
+        if (this.tipo == Aritmetica_1.tipoOp.SUMA) {
+            let valueIzq = this.operacionIzq.interpretar(arbol, tabla);
+            let valueDer = this.operacionDer.interpretar(arbol, tabla);
+            if (this.operacionIzq.tipoDato.getTipo() === Tipo_1.TipoDato.ENTERO) {
+                if (this.operacionDer.tipoDato.getTipo() === Tipo_1.TipoDato.ENTERO) {
+                    return Number(valueIzq) + Number(valueDer);
+                }
+            }
         }
-        else if (this.tipoDato.getTipo() === Tipo_1.TipoDato.CADENA) {
-            return this.valor.toString();
-        }
-        else if (this.tipoDato.getTipo() === Tipo_1.TipoDato.IDENTIFICADOR) {
-            let value = tabla.getValor(this.valor);
-            this.tipoDato = (0, get_1.default)(value, 'tipo', new Tipo_1.default(Tipo_1.TipoDato.INDEFINIDO));
-            return (0, get_1.default)(value, 'valor');
-        }
+        this.tipoDato.setTipo(Tipo_1.TipoDato.ENTERO);
+        return null;
     }
 }
-exports.default = Nativa;
+exports.default = Aritmetica;
