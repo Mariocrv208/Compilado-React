@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create(
     {
-        baseURL: 'http://localhost:5001/api',
+        baseURL: 'http://localhost:5001/',
         timeout: 15000,
         headers: {
             'Content-Type': 'application/json'
@@ -11,7 +11,7 @@ const instance = axios.create(
 )
 
 export const parse = async(value) => {
-    const { data } = await instance.post("/parse", {peticion: value})
+    const { data } = await instance.post("/analizar", {codigo: value})
     return data
 }
 

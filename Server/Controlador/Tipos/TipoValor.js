@@ -1,0 +1,12 @@
+const TIPO_VALOR = {
+    DECIMAL:       'VAL_DECIMAL',
+    ENTERO:        'VAL_ENTERO',
+    CADENA:        'VAL_CADENA',
+    BANDERA:       'VAL_BANDERA',
+    IDENTIFICADOR: 'VAL_IDENTIFICADOR',
+    CARACTER: 'VAL_CARACTER',
+    VECTOR: 'INT',
+    LISTA: 'LISTA',
+}
+
+module.exports = TIPO_VALOR

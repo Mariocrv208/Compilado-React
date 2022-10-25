@@ -1,0 +1,21 @@
+int[] array = {10, 11, 12, 13, 14, 15};
+list<char> lista = toCharArray("QUE HUECOS SON");
+
+exec main();
+
+void main() {
+   reverseList(length(lista));
+} 
+
+void reverseList(int num) {
+      list<char> y = new list<char>;
+      int p = num;
+      for(int i=0; i<num; i++){
+          y[[p - 1]] = lista[[i]];
+          p = p - 1;
+      }
+      print("Vector inverso:");
+      for(int j=0; j<num; j++){
+          print(y[[j]]);
+      } 
+   }

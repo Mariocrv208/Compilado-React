@@ -1,0 +1,28 @@
+const Tipo_Instruccion =  { 
+        PRINT: 'PRINT',
+        DECLARACION: 'DECLARACION',
+        ASIGNACION: 'ASIGNACION',
+        WHILE: 'WHILE',
+        FOR: 'FOR',
+        DOWHILE: 'DOWHILE',
+        IF: 'IF',
+        BREAK: 'BREAK',
+        CONTINUE: 'CONTINUE',
+        RETURN: 'RETURN',
+        INCREMENTO: 'INCREMENTO',
+        DECREMENTO: 'DECREMENTO',
+        SWITCH: 'SWITCH',
+        DECMETODO: 'DECMETODO',
+        LLAMADA_FUNC_METODO: 'LLAMADA_FUNC_METODO',
+        EXEC: 'EXEC',
+        DEC_VEC_FORMA_UNO: 'DEC_VEC_FORMA_UNO',
+        DEC_VEC_FORMA_DOS: 'DEC_VEC_FORMA_DOS',
+        MODIFICAR_VECTOR: 'MODIFICAR_VECTOR',
+        RETURN: 'RETURN',
+        DEC_LISTA: 'DEC_LISTA',
+        DEC_LISTA_FORMA_2: 'DEC_LISTA_FORMA_2',
+        AGREGAR_LISTA: 'AGREGAR_LISTA',
+        MODIFICAR_LISTA: 'MODIFICAR_LISTA',
+}
+
+module.exports = Tipo_Instruccion
