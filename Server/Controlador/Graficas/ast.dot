@@ -1,0 +1,199 @@
+digraph arbolAst { 
+rankdir = "TB"; 
+node[shape = box] 
+nodo0[label="Lista_Ins"] 
+nodo13[label="DEC_VECTOR"] 
+nodo0 -> nodo13
+nodo14[label="Tipo_Vec 
+INT"] 
+nodo13 -> nodo14
+nodo15[label="Id_Vev 
+array"] 
+nodo13 -> nodo15
+nodo16[label="ELEMENTOS"] 
+nodo13 -> nodo16
+nodo1[label="10"] 
+nodo16 -> nodo1
+nodo3[label="11"] 
+nodo16 -> nodo3
+nodo5[label="12"] 
+nodo16 -> nodo5
+nodo7[label="13"] 
+nodo16 -> nodo7
+nodo9[label="14"] 
+nodo16 -> nodo9
+nodo11[label="15"] 
+nodo16 -> nodo11
+nodo43[label="EXEC"] 
+nodo0 -> nodo43
+nodo44[label="id 
+main"] 
+nodo43 -> nodo44
+nodo60[label="DEC_METODO"] 
+nodo0 -> nodo60
+nodo61[label="Tipo Retorno 
+Void"] 
+nodo60 -> nodo61
+nodo62[label="Nombre 
+main"] 
+nodo60 -> nodo62
+nodo64[label="LISTA_INS"] 
+nodo60 -> nodo64
+nodo55[label="LLAMADA_FUNC"] 
+nodo64 -> nodo55
+nodo56[label="id"] 
+nodo55 -> nodo56
+nodo57[label="LISTA_VALORES"] 
+nodo55 -> nodo57
+nodo50[label="FUNC_NATIVA"] 
+nodo57 -> nodo50
+nodo51[label="TIPO_FUNC 
+FUNC_LENGTH"] 
+nodo50 -> nodo51
+nodo52[label="EXPRESION"] 
+nodo50 -> nodo52
+nodo48[label="lista"] 
+nodo52 -> nodo48
+nodo197[label="DEC_METODO"] 
+nodo0 -> nodo197
+nodo198[label="Tipo Retorno 
+Void"] 
+nodo197 -> nodo198
+nodo199[label="Nombre 
+reverseList"] 
+nodo197 -> nodo199
+nodo200[label="LISTA_PARAMS"] 
+nodo197 -> nodo200
+nodo201[label="LISTA_INS"] 
+nodo197 -> nodo201
+nodo71[label="DEC_LISTA"] 
+nodo201 -> nodo71
+nodo72[label="Tipo 
+CHAR"] 
+nodo71 -> nodo72
+nodo73[label="Id_Lista 
+y"] 
+nodo71 -> nodo73
+nodo85[label="DEC_VAR"] 
+nodo201 -> nodo85
+nodo86[label="Tipo 
+INT"] 
+nodo85 -> nodo86
+nodo87[label="id 
+p"] 
+nodo85 -> nodo87
+nodo88[label="EXPRESION"] 
+nodo85 -> nodo88
+nodo83[label="num"] 
+nodo88 -> nodo83
+nodo141[label="FOR"] 
+nodo201 -> nodo141
+nodo92[label="DEC_VAR"] 
+nodo141 -> nodo92
+nodo93[label="Tipo 
+INT"] 
+nodo92 -> nodo93
+nodo94[label="id 
+i"] 
+nodo92 -> nodo94
+nodo95[label="EXPRESION"] 
+nodo92 -> nodo95
+nodo90[label="0"] 
+nodo95 -> nodo90
+nodo143[label="CONDICION"] 
+nodo141 -> nodo143
+nodo144[label="ACTUALIZACION"] 
+nodo141 -> nodo144
+nodo145[label="LISTA_INS"] 
+nodo141 -> nodo145
+nodo101[label="MENOR"] 
+nodo143 -> nodo101
+nodo97[label="i"] 
+nodo101 -> nodo97
+nodo99[label="num"] 
+nodo101 -> nodo99
+nodo104[label="INCREMENTO
+i"] 
+nodo144 -> nodo104
+nodo121[label="MOD_LISTA"] 
+nodo145 -> nodo121
+nodo122[label="Id_Lista 
+y"] 
+nodo121 -> nodo122
+nodo123[label="EXP_INDICE"] 
+nodo121 -> nodo123
+nodo124[label="EXP_VALOR"] 
+nodo121 -> nodo124
+nodo109[label="RESTA"] 
+nodo123 -> nodo109
+nodo105[label="p"] 
+nodo109 -> nodo105
+nodo107[label="1"] 
+nodo109 -> nodo107
+nodo114[label="ACCESO_LISTA"] 
+nodo124 -> nodo114
+nodo115[label="Id_Lista 
+lista"] 
+nodo114 -> nodo115
+nodo116[label="EXP_INDICE"] 
+nodo114 -> nodo116
+nodo112[label="i"] 
+nodo116 -> nodo112
+nodo137[label="ASIGNAR_VAR"] 
+nodo145 -> nodo137
+nodo138[label="Id 
+p"] 
+nodo137 -> nodo138
+nodo139[label="EXPRESION"] 
+nodo137 -> nodo139
+nodo134[label="RESTA"] 
+nodo139 -> nodo134
+nodo130[label="p"] 
+nodo134 -> nodo130
+nodo132[label="1"] 
+nodo134 -> nodo132
+nodo155[label="IMPRIMIR"] 
+nodo201 -> nodo155
+nodo153[label="Vector inverso:"] 
+nodo155 -> nodo153
+nodo185[label="FOR"] 
+nodo201 -> nodo185
+nodo160[label="DEC_VAR"] 
+nodo185 -> nodo160
+nodo161[label="Tipo 
+INT"] 
+nodo160 -> nodo161
+nodo162[label="id 
+j"] 
+nodo160 -> nodo162
+nodo163[label="EXPRESION"] 
+nodo160 -> nodo163
+nodo158[label="0"] 
+nodo163 -> nodo158
+nodo187[label="CONDICION"] 
+nodo185 -> nodo187
+nodo188[label="ACTUALIZACION"] 
+nodo185 -> nodo188
+nodo189[label="LISTA_INS"] 
+nodo185 -> nodo189
+nodo169[label="MENOR"] 
+nodo187 -> nodo169
+nodo165[label="j"] 
+nodo169 -> nodo165
+nodo167[label="num"] 
+nodo169 -> nodo167
+nodo172[label="INCREMENTO
+j"] 
+nodo188 -> nodo172
+nodo182[label="IMPRIMIR"] 
+nodo189 -> nodo182
+nodo175[label="ACCESO_LISTA"] 
+nodo182 -> nodo175
+nodo176[label="Id_Lista 
+y"] 
+nodo175 -> nodo176
+nodo177[label="EXP_INDICE"] 
+nodo175 -> nodo177
+nodo173[label="j"] 
+nodo177 -> nodo173
+}

@@ -6,7 +6,8 @@ function Footer(){
             {
                 height: '100%',
                 width: '100%',
-                backgroundColor: '#6373C5'
+                backgroundColor: '#6373C5',
+                marginTop: '35px'
             }
         }>
             <h4 style={{textAlign: 'justify'}}>Universidad de San Carlos de Guatemala</h4>

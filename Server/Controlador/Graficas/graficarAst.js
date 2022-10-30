@@ -35,9 +35,9 @@ function graficarAst(arbolAst) {
         dotText += graficarSentencia(0, sentencia)
     }
     dotText += "}"
-    fs.writeFile('./Controlador/Graficas/ast.dot', dotText, (err) => {}) 
-    exec("dot -Tjpg ./Controlador/Graficas/ast.dot -o ./Controlador/Graficas/ast.jpg")
-    const base64 = fs.readFileSync("./Controlador/Graficas/ast.jpg", "base64");
+    fs.writeFile('C:\\Users\\Mario\\OneDrive\\Escritorio\\USAC\\S22022\\Compi1\\p2\\OLC1_P2_201908338\\Client\\src\\Imagenes\\ast.dot', dotText, (err) => {}) 
+    exec("dot -Tjpg C:\\Users\\Mario\\OneDrive\\Escritorio\\USAC\\S22022\\Compi1\\p2\\OLC1_P2_201908338\\Client\\src\\Imagenes\\ast.dot -o C:\\Users\\Mario\\OneDrive\\Escritorio\\USAC\\S22022\\Compi1\\p2\\OLC1_P2_201908338\\Client\\src\\Imagenes\\ast.jpg")
+    const base64 = fs.readFileSync("C:\\Users\\Mario\\OneDrive\\Escritorio\\USAC\\S22022\\Compi1\\p2\\OLC1_P2_201908338\\Client\\src\\Imagenes\\ast.jpg", "base64");
     return base64
 }
 
@@ -119,7 +119,7 @@ function graficarSentencia(idPadre, sentencia) {
 
 function graficarExec(idPadre, sentencia) {
     dotText = ""
-    dotText += getNodo(sentencia.idSent, "EXEC", idPadre)
+    dotText += getNodo(sentencia.idSent, "RUN", idPadre)
     dotText += getNodo(sentencia.idSent+1, "id \n" + sentencia.id, sentencia.idSent)
     if (sentencia.listaValores.length != 0) {
         dotText += getNodo(sentencia.idSent+2, "PARAMETROS", sentencia.idSent)

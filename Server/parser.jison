@@ -68,7 +68,7 @@
 "typeOf"              return 'typeOf'
 "toString"            return 'ToString'
 "toCharArray"         return 'toCharArray'
-"exec"                return 'exec'
+"run"                 return 'run'
 
 
 
@@ -160,7 +160,7 @@ INSTRUCCCION:   DECLARAR_VAR ptyComa            { $$ = $1; }
                 |MODIFICAR_VECTOR ptyComa       { $$ = $1; }
                 |MODIFICAR_LISTA ptyComa        { $$ = $1; }
                 |FUNCION_NATIVA ptyComa         { $$ = $1; }
-                |EXEC ptyComa                   { $$ = $1; }
+                |RUN ptyComa                   { $$ = $1; }
 ;
 
 DECLARAR_VAR:   TIPO identificador igual EXPRESION { $$ = Instruccion.nuevaDeclaracion($2, $4, $1, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 5;}
@@ -288,8 +288,8 @@ DECLARAR_FUNCION: TIPO identificador parentesisA parentesisC llaveA LISTA_INSTRU
                 |TIPO identificador parentesisA LISTA_PARAMETROS  parentesisC llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevaDecMetodo($1, $2, $4, $7, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 8 }
 ;
 
-EXEC: exec identificador parentesisA parentesisC                        { $$ = Instruccion.nuevoExec($2, [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 5 }
-        |exec identificador parentesisA LISTA_VALORES parentesisC       { $$ = Instruccion.nuevoExec($2, $4, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 6  }
+RUN: run identificador parentesisA parentesisC                        { $$ = Instruccion.nuevoExec($2, [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 5 }
+        |run identificador parentesisA LISTA_VALORES parentesisC       { $$ = Instruccion.nuevoExec($2, $4, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 6  }
 ;
 
 LISTA_VALORES: LISTA_VALORES coma EXPRESION { $1.push($3); $$ = $1; }

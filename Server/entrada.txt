@@ -1,7 +1,7 @@
 int[] array = {10, 11, 12, 13, 14, 15};
 list<char> lista = toCharArray("QUE HUECOS SON");
 
-exec main();
+run main();
 
 void main() {
    reverseList(length(lista));

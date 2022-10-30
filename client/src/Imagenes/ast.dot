@@ -1,0 +1,24 @@
+digraph arbolAst { 
+rankdir = "TB"; 
+node[shape = box] 
+nodo0[label="Lista_Ins"] 
+nodo1[label="RUN"] 
+nodo0 -> nodo1
+nodo2[label="id 
+main"] 
+nodo1 -> nodo2
+nodo11[label="DEC_METODO"] 
+nodo0 -> nodo11
+nodo12[label="Tipo Retorno 
+Void"] 
+nodo11 -> nodo12
+nodo13[label="Nombre 
+main"] 
+nodo11 -> nodo13
+nodo15[label="LISTA_INS"] 
+nodo11 -> nodo15
+nodo8[label="IMPRIMIR"] 
+nodo15 -> nodo8
+nodo6[label="hola"] 
+nodo8 -> nodo6
+}

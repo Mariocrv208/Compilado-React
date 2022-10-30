@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 function NavBar(){
+    const [numPage, setnumPages] = useState(null)
+    const [pageNumber, setPageNumber] = useState(1)
+
+    function onDocumentLoadSucces({numPage}){
+        setnumPages(numPage);
+        setPageNumber(1);
+    }
+    
+
     return(
         <>
             <div class="collapse" id="navbarToggleExternalContent" style={{textAlign:'center'}}>
@@ -13,8 +23,6 @@ function NavBar(){
                     <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#E36246', borderColor: 'black', color: 'black'}}>Crear archivos</button>
                     <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#E3B346', borderColor: 'black', color: 'black'}}>Abrir archivos</button>
                     <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#99E346', borderColor: 'black', color: 'black'}}>Guardar el archivo</button>
-                    <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#46E37A', borderColor: 'black', color: 'black'}}>Reporte de Errores</button>
-                    <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#46E1E3', borderColor: 'black', color: 'black'}}>Generar Árbol AST</button>
                     <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#466AE3', borderColor: 'black', color: 'black'}}>Tabla de Símbolos General</button>
                 </form>
             </nav>
