@@ -2,198 +2,50 @@ digraph arbolAst {
 rankdir = "TB"; 
 node[shape = box] 
 nodo0[label="Lista_Ins"] 
-nodo32[label="DEC_VECTOR"] 
-nodo0 -> nodo32
-nodo33[label="Tipo_Vec 
-INT"] 
-nodo32 -> nodo33
-nodo34[label="Id_Vev 
-array"] 
-nodo32 -> nodo34
-nodo35[label="ELEMENTOS"] 
-nodo32 -> nodo35
-nodo20[label="10"] 
-nodo35 -> nodo20
-nodo22[label="11"] 
-nodo35 -> nodo22
-nodo24[label="12"] 
-nodo35 -> nodo24
-nodo26[label="13"] 
-nodo35 -> nodo26
-nodo28[label="14"] 
-nodo35 -> nodo28
-nodo30[label="15"] 
-nodo35 -> nodo30
-nodo62[label="RUN"] 
-nodo0 -> nodo62
-nodo63[label="id 
+nodo124[label="RUN"] 
+nodo0 -> nodo124
+nodo125[label="id 
 main"] 
-nodo62 -> nodo63
-nodo79[label="DEC_METODO"] 
-nodo0 -> nodo79
-nodo80[label="Tipo Retorno 
+nodo124 -> nodo125
+nodo156[label="DEC_METODO"] 
+nodo0 -> nodo156
+nodo157[label="Tipo Retorno 
 Void"] 
-nodo79 -> nodo80
-nodo81[label="Nombre 
-main"] 
-nodo79 -> nodo81
-nodo83[label="LISTA_INS"] 
-nodo79 -> nodo83
-nodo74[label="LLAMADA_FUNC"] 
-nodo83 -> nodo74
-nodo75[label="id"] 
-nodo74 -> nodo75
-nodo76[label="LISTA_VALORES"] 
-nodo74 -> nodo76
-nodo69[label="FUNC_NATIVA"] 
-nodo76 -> nodo69
-nodo70[label="TIPO_FUNC 
-FUNC_LENGTH"] 
-nodo69 -> nodo70
-nodo71[label="EXPRESION"] 
-nodo69 -> nodo71
-nodo67[label="lista"] 
-nodo71 -> nodo67
-nodo216[label="DEC_METODO"] 
-nodo0 -> nodo216
-nodo217[label="Tipo Retorno 
-Void"] 
-nodo216 -> nodo217
-nodo218[label="Nombre 
-reverseList"] 
-nodo216 -> nodo218
-nodo219[label="LISTA_PARAMS"] 
-nodo216 -> nodo219
-nodo220[label="LISTA_INS"] 
-nodo216 -> nodo220
-nodo90[label="DEC_LISTA"] 
-nodo220 -> nodo90
-nodo91[label="Tipo 
-CHAR"] 
-nodo90 -> nodo91
-nodo92[label="Id_Lista 
-y"] 
-nodo90 -> nodo92
-nodo104[label="DEC_VAR"] 
-nodo220 -> nodo104
-nodo105[label="Tipo 
-INT"] 
-nodo104 -> nodo105
-nodo106[label="id 
-p"] 
-nodo104 -> nodo106
-nodo107[label="EXPRESION"] 
-nodo104 -> nodo107
-nodo102[label="num"] 
-nodo107 -> nodo102
-nodo160[label="FOR"] 
-nodo220 -> nodo160
-nodo111[label="DEC_VAR"] 
-nodo160 -> nodo111
-nodo112[label="Tipo 
-INT"] 
-nodo111 -> nodo112
-nodo113[label="id 
-i"] 
-nodo111 -> nodo113
-nodo114[label="EXPRESION"] 
-nodo111 -> nodo114
-nodo109[label="0"] 
-nodo114 -> nodo109
-nodo162[label="CONDICION"] 
-nodo160 -> nodo162
-nodo163[label="ACTUALIZACION"] 
-nodo160 -> nodo163
-nodo164[label="LISTA_INS"] 
-nodo160 -> nodo164
-nodo120[label="MENOR"] 
-nodo162 -> nodo120
-nodo116[label="i"] 
-nodo120 -> nodo116
-nodo118[label="num"] 
-nodo120 -> nodo118
-nodo123[label="INCREMENTO
-i"] 
-nodo163 -> nodo123
-nodo140[label="MOD_LISTA"] 
-nodo164 -> nodo140
-nodo141[label="Id_Lista 
-y"] 
-nodo140 -> nodo141
-nodo142[label="EXP_INDICE"] 
-nodo140 -> nodo142
-nodo143[label="EXP_VALOR"] 
-nodo140 -> nodo143
-nodo128[label="RESTA"] 
-nodo142 -> nodo128
-nodo124[label="p"] 
-nodo128 -> nodo124
-nodo126[label="1"] 
-nodo128 -> nodo126
-nodo133[label="ACCESO_LISTA"] 
-nodo143 -> nodo133
-nodo134[label="Id_Lista 
-lista"] 
-nodo133 -> nodo134
-nodo135[label="EXP_INDICE"] 
-nodo133 -> nodo135
-nodo131[label="i"] 
-nodo135 -> nodo131
-nodo156[label="ASIGNAR_VAR"] 
-nodo164 -> nodo156
-nodo157[label="Id 
-p"] 
 nodo156 -> nodo157
-nodo158[label="EXPRESION"] 
+nodo158[label="Nombre 
+main"] 
 nodo156 -> nodo158
-nodo153[label="RESTA"] 
-nodo158 -> nodo153
-nodo149[label="p"] 
-nodo153 -> nodo149
-nodo151[label="1"] 
+nodo160[label="LISTA_INS"] 
+nodo156 -> nodo160
+nodo136[label="IMPRIMIR"] 
+nodo160 -> nodo136
+nodo133[label="SUMA"] 
+nodo136 -> nodo133
+nodo129[label="5"] 
+nodo133 -> nodo129
+nodo131[label="false"] 
+nodo133 -> nodo131
+nodo146[label="DEC_VAR"] 
+nodo160 -> nodo146
+nodo147[label="Tipo 
+BOOLEAN"] 
+nodo146 -> nodo147
+nodo148[label="id 
+boolChar"] 
+nodo146 -> nodo148
+nodo149[label="EXPRESION"] 
+nodo146 -> nodo149
+nodo141[label="CASTEO"] 
+nodo149 -> nodo141
+nodo142[label="Tipo Deseado 
+BOOLEAN"] 
+nodo141 -> nodo142
+nodo143[label="Expresion"] 
+nodo141 -> nodo143
+nodo139[label="0"] 
+nodo143 -> nodo139
+nodo153[label="IMPRIMIR"] 
+nodo160 -> nodo153
+nodo151[label="boolChar"] 
 nodo153 -> nodo151
-nodo174[label="IMPRIMIR"] 
-nodo220 -> nodo174
-nodo172[label="Vector inverso:"] 
-nodo174 -> nodo172
-nodo204[label="FOR"] 
-nodo220 -> nodo204
-nodo179[label="DEC_VAR"] 
-nodo204 -> nodo179
-nodo180[label="Tipo 
-INT"] 
-nodo179 -> nodo180
-nodo181[label="id 
-j"] 
-nodo179 -> nodo181
-nodo182[label="EXPRESION"] 
-nodo179 -> nodo182
-nodo177[label="0"] 
-nodo182 -> nodo177
-nodo206[label="CONDICION"] 
-nodo204 -> nodo206
-nodo207[label="ACTUALIZACION"] 
-nodo204 -> nodo207
-nodo208[label="LISTA_INS"] 
-nodo204 -> nodo208
-nodo188[label="MENOR"] 
-nodo206 -> nodo188
-nodo184[label="j"] 
-nodo188 -> nodo184
-nodo186[label="num"] 
-nodo188 -> nodo186
-nodo191[label="INCREMENTO
-j"] 
-nodo207 -> nodo191
-nodo201[label="IMPRIMIR"] 
-nodo208 -> nodo201
-nodo194[label="ACCESO_LISTA"] 
-nodo201 -> nodo194
-nodo195[label="Id_Lista 
-y"] 
-nodo194 -> nodo195
-nodo196[label="EXP_INDICE"] 
-nodo194 -> nodo196
-nodo192[label="j"] 
-nodo196 -> nodo192
 }

@@ -14,10 +14,10 @@ function ejecutarAmbitoGlobal(listaInstrucciones, ambito){
         }
     }
     if (contadorExec === 0) {
-        return 'Error: No se ha detectado la sentencia EXEC'
+        return 'Error: No se ha detectado la sentencia RUN'
     }
     else if(contadorExec > 1) {
-        return 'Error: Se ha detectado más de un EXEC'
+        return 'Error: Se ha detectado más de un RUN'
     }
 
     //2DA PASADA VAMOS A DECLARAR VARIABLES, METODOS Y ASIGNAR VALORES

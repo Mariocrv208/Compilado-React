@@ -510,18 +510,75 @@ function casteo(_exp, _ambito) {
     let valor
     if (simboloOriginal.tipo === TIPO_DATO.ENTERO && _exp.tipoDeseado === TIPO_DATO.DECIMAL) {
         valor = simboloOriginal.valor
-    } else if (simboloOriginal.tipo === TIPO_DATO.DECIMAL && _exp.tipoDeseado=== TIPO_DATO.ENTERO) {
-        valor = simboloOriginal.valor.toFixed() 
     } else if (simboloOriginal.tipo === TIPO_DATO.ENTERO && _exp.tipoDeseado === TIPO_DATO.CADENA) {
         valor = simboloOriginal.valor.toString()
+    } else if (simboloOriginal.tipo === TIPO_DATO.ENTERO && _exp.tipoDeseado === TIPO_DATO.BANDERA) {
+        if(simboloOriginal.valor.toString() == "1"){
+            simboloOriginal.valor = true;
+        } else if (simboloOriginal.valor.toString() == "0"){
+            simboloOriginal.valor = false;
+        }
+        valor = simboloOriginal.valor
     } else if (simboloOriginal.tipo === TIPO_DATO.ENTERO && _exp.tipoDeseado === TIPO_DATO.CARACTER) {
-        valor = String.fromCharCode(simboloOriginal.valor)
-    }  else if (simboloOriginal.tipo === TIPO_DATO.DECIMAL && _exp.tipoDeseado === TIPO_DATO.CADENA) {
+        valor = simboloOriginal.valor.toString()[0]
+    } else if (simboloOriginal.tipo === TIPO_DATO.DECIMAL && _exp.tipoDeseado=== TIPO_DATO.ENTERO) {
+        valor = simboloOriginal.valor.toFixed() 
+    } else if (simboloOriginal.tipo === TIPO_DATO.DECIMAL && _exp.tipoDeseado === TIPO_DATO.CADENA) {
         valor = simboloOriginal.valor.toString()
-    }  else if (simboloOriginal.tipo === TIPO_DATO.CARACTER && _exp.tipoDeseado === TIPO_DATO.ENTERO) {
-        valor = simboloOriginal.valor.charCodeAt(0)
+    } else if (simboloOriginal.tipo === TIPO_DATO.BANDERA && _exp.tipoDeseado === TIPO_DATO.ENTERO) {
+        if(simboloOriginal.valor.toString() == "0"){
+            simboloOriginal.valor = 0;
+        } else if (simboloOriginal.valor.toString() == "1"){
+            simboloOriginal.valor = 1;
+        }        
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.BANDERA && _exp.tipoDeseado === TIPO_DATO.DECIMAL) {
+        if(simboloOriginal.valor.toString() == "0"){
+            simboloOriginal.valor = 0.0;
+        } else if (simboloOriginal.valor.toString() == "1"){
+            simboloOriginal.valor = 1.0;
+        }        
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.BANDERA && _exp.tipoDeseado === TIPO_DATO.CHAR) {
+        if(simboloOriginal.valor.toString() == "0"){
+            simboloOriginal.valor = '0';
+        } else if (simboloOriginal.valor.toString() == "1"){
+            simboloOriginal.valor = '1';
+        }   
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.BANDERA && _exp.tipoDeseado === TIPO_DATO.CADENA) {
+        if(simboloOriginal.valor.toString() == "0"){
+            simboloOriginal.valor = "0";
+        } else if (simboloOriginal.valor.toString() == "1"){
+            simboloOriginal.valor = "1";
+        }   
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.CARACTER && _exp.tipoDeseado === TIPO_DATO.ENTERO) {
+        valor = parseInt(simboloOriginal.valor.toString()[0])
     } else if (simboloOriginal.tipo === TIPO_DATO.CARACTER && _exp.tipoDeseado === TIPO_DATO.DOBLE) {
+        valor = parseFloat(simboloOriginal.valor.toString()[0])
+    } else if (simboloOriginal.tipo === TIPO_DATO.CARACTER && _exp.tipoDeseado === TIPO_DATO.BANDERA) {
+        if(simboloOriginal.valor.toString() == "false"){
+            simboloOriginal.valor = false;
+        } else if (simboloOriginal.valor.toString() == "true"){
+            simboloOriginal.valor = true;
+        }   
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.CARACTER && _exp.tipoDeseado === TIPO_DATO.CADENA) {
+        valor = simboloOriginal.valor.toString()
+    } else if (simboloOriginal.tipo === TIPO_DATO.CADENA && _exp.tipoDeseado === TIPO_DATO.ENTERO) {
+        valor = parseInt(simboloOriginal.valor)
+    } else if (simboloOriginal.tipo === TIPO_DATO.CADENA && _exp.tipoDeseado === TIPO_DATO.DECIMAL) {
         valor = parseFloat(simboloOriginal.valor)
+    } else if (simboloOriginal.tipo === TIPO_DATO.CADENA && _exp.tipoDeseado === TIPO_DATO.BANDERA) {
+        if(simboloOriginal.valor == "false"){
+            simboloOriginal.valor = false;
+        } else if (simboloOriginal.valor.toString() == "true"){
+            simboloOriginal.valor = true;
+        }   
+        valor = simboloOriginal.valor
+    } else if (simboloOriginal.tipo === TIPO_DATO.CADENA && _exp.tipoDeseado === TIPO_DATO.CHAR) {
+        valor = simboloOriginal.valor.toString()[0]
     } else if (simboloOriginal.tipo === _exp.tipoDeseado) {
         valor = simboloOriginal.valor
     } else {

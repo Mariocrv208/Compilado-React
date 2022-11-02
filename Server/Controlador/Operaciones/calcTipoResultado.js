@@ -14,24 +14,30 @@ function calcTipoResultado(_tipo1, _tipo2, tipoIns){
             return TIPO_DATO.DECIMAL
         } else if (_tipo1 === TIPO_DATO.ENTERO && _tipo2 === TIPO_DATO.BANDERA) {
             switch(tipoIns) {
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            if(tipoIns === TIPO_OPERACION.DIVISION){
+                return TIPO_DATO.DECIMAL
+            }
+            return TIPO_DATO.ENTERO
+        } else if (_tipo1 === TIPO_DATO.ENTERO && _tipo2 === TIPO_DATO.CARACTER) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            if(tipoIns === TIPO_OPERACION.DIVISION){
+                return TIPO_DATO.DECIMAL
+            }
+            return TIPO_DATO.ENTERO
+        } else if (_tipo1 === TIPO_DATO.ENTERO && _tipo2 === TIPO_DATO.CADENA) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
                 case TIPO_OPERACION.MULTIPLICACION:
                 case TIPO_OPERACION.DIVISION:
-                case TIPO_OPERACION.POTENCIA:
-                case TIPO_OPERACION.MODULO:
-                case TIPO_OPERACION.UMENOS:
-                    return null
-            }
-            return TIPO_DATO.ENTERO
-        } else if (_tipo1 === TIPO_DATO.ENTERO && _tipo2 === TIPO_DATO.CARACTER) {
-            switch(tipoIns) {
-                case TIPO_OPERACION.POTENCIA:
-                case TIPO_OPERACION.MODULO:
-                case TIPO_OPERACION.UMENOS:
-                    return null
-            }
-            return TIPO_DATO.ENTERO
-        } else if (_tipo1 === TIPO_DATO.ENTERO && _tipo2 === TIPO_DATO.CARACTER) {
-            switch(tipoIns) {
                 case TIPO_OPERACION.POTENCIA:
                 case TIPO_OPERACION.MODULO:
                 case TIPO_OPERACION.UMENOS:
@@ -44,9 +50,6 @@ function calcTipoResultado(_tipo1, _tipo2, tipoIns){
             return TIPO_DATO.DECIMAL
         } else if (_tipo1 === TIPO_DATO.DECIMAL && _tipo2 === TIPO_DATO.BANDERA) {
             switch(tipoIns) {
-                case TIPO_OPERACION.MULTIPLICACION:
-                case TIPO_OPERACION.DIVISION:
-                case TIPO_OPERACION.POTENCIA:
                 case TIPO_OPERACION.MODULO:
                 case TIPO_OPERACION.UMENOS:
                     return null
@@ -60,8 +63,9 @@ function calcTipoResultado(_tipo1, _tipo2, tipoIns){
                     return null
             }
             return TIPO_DATO.DECIMAL
-        } else if (_tipo1 === TIPO_DATO.BANDERA && _tipo2 === TIPO_DATO.ENTERO) {                
+        } else if (_tipo1 === TIPO_DATO.DECIMAL && _tipo2 === TIPO_DATO.CADENA) {
             switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
                 case TIPO_OPERACION.MULTIPLICACION:
                 case TIPO_OPERACION.DIVISION:
                 case TIPO_OPERACION.POTENCIA:
@@ -69,24 +73,44 @@ function calcTipoResultado(_tipo1, _tipo2, tipoIns){
                 case TIPO_OPERACION.UMENOS:
                     return null
             }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.BANDERA && _tipo2 === TIPO_DATO.ENTERO) {                
+            switch(tipoIns) {
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            if(tipoIns === TIPO_OPERACION.DIVISION){
+                return TIPO_DATO.DECIMAL
+            }
             return TIPO_DATO.ENTERO
         } else if (_tipo1 === TIPO_DATO.BANDERA && _tipo2 === TIPO_DATO.DECIMAL) {
             switch(tipoIns) {
-                case TIPO_OPERACION.MULTIPLICACION:
-                case TIPO_OPERACION.DIVISION:
-                case TIPO_OPERACION.POTENCIA:
                 case TIPO_OPERACION.MODULO:
                 case TIPO_OPERACION.UMENOS:
                     return null
             }
             return TIPO_DATO.DECIMAL
+        } else if (_tipo1 === TIPO_DATO.BANDERA && _tipo2 === TIPO_DATO.CADENA) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
+                case TIPO_OPERACION.MULTIPLICACION:
+                case TIPO_OPERACION.DIVISION:
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            return TIPO_DATO.CADENA
         } else if (_tipo1 === TIPO_DATO.CARACTER && _tipo2 === TIPO_DATO.ENTERO) {
             switch(tipoIns) {
                 case TIPO_OPERACION.POTENCIA:
                 case TIPO_OPERACION.MODULO:
-                case TIPO_OPERACION.MODULO:
                 case TIPO_OPERACION.UMENOS:
                     return null
+            }
+            if(tipoIns === TIPO_OPERACION.DIVISION){
+                return TIPO_DATO.DECIMAL
             }
             return TIPO_DATO.ENTERO
         } else if (_tipo1 === TIPO_DATO.CARACTER && _tipo2 === TIPO_DATO.DECIMAL) {
@@ -97,7 +121,66 @@ function calcTipoResultado(_tipo1, _tipo2, tipoIns){
                     return null
             }
             return TIPO_DATO.DECIMAL
-        }else if (_tipo1 === TIPO_DATO.CARACTER && _tipo2 === TIPO_DATO.CARACTER) {
+        } else if (_tipo1 === TIPO_DATO.CARACTER && _tipo2 === TIPO_DATO.CARACTER) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            if(tipoIns === TIPO_OPERACION.MULTIPLICACION){
+                return TIPO_DATO.ENTERO
+            } else if(tipoIns === TIPO_OPERACION.RESTA){
+                return TIPO_DATO.ENTERO
+            }else if(tipoIns === TIPO_OPERACION.DIVISION){
+                return TIPO_DATO.DECIMAL
+            }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.CARACTER && _tipo2 === TIPO_DATO.CADENA) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
+                case TIPO_OPERACION.MULTIPLICACION:
+                case TIPO_OPERACION.DIVISION:
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.CADENA || _tipo2 === TIPO_DATO.ENTERO) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
+                case TIPO_OPERACION.MULTIPLICACION:
+                case TIPO_OPERACION.DIVISION:
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.CADENA || _tipo2 === TIPO_DATO.DECIMAL) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
+                case TIPO_OPERACION.MULTIPLICACION:
+                case TIPO_OPERACION.DIVISION:
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.CADENA || _tipo2 === TIPO_DATO.BANDERA) {
+            switch(tipoIns) {
+                case TIPO_OPERACION.RESTA:
+                case TIPO_OPERACION.MULTIPLICACION:
+                case TIPO_OPERACION.DIVISION:
+                case TIPO_OPERACION.POTENCIA:
+                case TIPO_OPERACION.MODULO:
+                case TIPO_OPERACION.UMENOS:
+                    return null
+            }
+            return TIPO_DATO.CADENA
+        } else if (_tipo1 === TIPO_DATO.CADENA || _tipo2 === TIPO_DATO.CARACTER) {
             switch(tipoIns) {
                 case TIPO_OPERACION.RESTA:
                 case TIPO_OPERACION.MULTIPLICACION:

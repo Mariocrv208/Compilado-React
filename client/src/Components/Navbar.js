@@ -21,8 +21,6 @@ function NavBar(props){
                 <form class="container-fluid justifyContent">
                     <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#E36246', borderColor: 'black', color: 'black'}} onClick={createFile}>Crear archivos</button>
                     {props.comp}
-                    <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#99E346', borderColor: 'black', color: 'black'}}>Guardar el archivo</button>
-                    <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#466AE3', borderColor: 'black', color: 'black'}}>Tabla de Símbolos General</button>
                 </form>
             </nav>
             </div>

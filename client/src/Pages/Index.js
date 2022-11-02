@@ -4,12 +4,14 @@ import TextArea from "../Components/TextArea"
 import Footer from "../Components/footer";
 import Service from "../Services/Service";
 import { RViewerTrigger, RViewer} from 'react-viewerjs';
+import SymbolTable from "../Components/TablaSimbolos";
 
 function Index(){
     const elementVariable = useRef(null)
 
     const [ value, setValue ] = useState("")
     const [ response, setResponse ] = useState("")
+    const [ restabla, setRestabla ] = useState()
 
     const changeText = (valueA) => {
         setValue(valueA)
@@ -18,6 +20,10 @@ function Index(){
     const handlerPostParse = () => {
         Service.parse(value).then(({consola}) => {
             setResponse(consola)
+            console.log(Service)
+        })
+        Service.parse(value).then(({tablaSimbolos}) => {
+            setRestabla(tablaSimbolos)
         })
     }
 
@@ -26,6 +32,10 @@ function Index(){
 
     function eraseText() {
         setResponse("")
+    }
+
+    function construirTabla() {
+        console.log(restabla)
     }
 
     let imagenes= [
@@ -59,10 +69,12 @@ function Index(){
         <input class="btn btn-outline-success me-2" type="file" id="formFileMultiple" multiple style={{backgroundColor: '#E3B346', borderColor: 'black', color: 'black'}} onChange={readFile} ></input>
     </div>
 
+    const botonTabla = <button class="btn btn-outline-success me-2" type="button" style={{backgroundColor: '#466AE3', borderColor: 'black', color: 'black'}} onClick={construirTabla}>Tabla de Símbolos General</button>
+
     return(
         
         <>    
-        <NavBar value={value} comp = {botonCargar}></NavBar>
+        <NavBar value={value} comp = {botonCargar} comp2 ={botonTabla}></NavBar>
         <body style={{backgroundColor: '#6373C5', height: '100%', width: '100vw'}}>    
             <div style={{backgroundColor: '#6373C5'}}>
                 <h1 style={{textAlign: 'center', marginBottom: '35px'}}>BIENVENIDO A NUESTRA PAGINA :D</h1>
@@ -84,6 +96,10 @@ function Index(){
                             })}
                         </div>
                     </RViewer>
+                </div>
+                <div style={{backgroundColor: '#6373C5', marginLeft: '5%', marginRight: '5%'}}>
+                    <h2 style={{textAlign: 'center', marginBottom: '35px', marginTop:"35px"}}>TABLA DE SIMBOLOS</h2>
+                    <SymbolTable valores={restabla}></SymbolTable>
                 </div>
                 <div style={{backgroundColor: '#6373C5'}}>
                     <h2 style={{textAlign: 'center', marginBottom: '35px', marginTop:"35px"}}>REPORTE ERRORES</h2>
