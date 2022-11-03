@@ -236,7 +236,16 @@ function validarTiposOperacionRelacional(tipo1, tipo2, tipoOperacion) {
     }
     if (tipoOperacion == TIPO_OPERACION.IGUALIGUAL || 
         tipoOperacion == TIPO_OPERACION.NOIGUAL) {
-        if (tipo1 === TIPO_DATO.CADENA && tipo2 === TIPO_DATO.CADENA) {
+        if ((tipo1 === TIPO_DATO.CADENA && tipo2 === TIPO_DATO.CADENA)||
+        (tipo1 === TIPO_DATO.ENTERO && tipo2 === TIPO_DATO.DECIMAL) ||
+        (tipo1 === TIPO_DATO.ENTERO && tipo2 === TIPO_DATO.ENTERO) ||
+        (tipo1 === TIPO_DATO.DECIMAL && tipo2 === TIPO_DATO.ENTERO) ||
+        (tipo1 === TIPO_DATO.DECIMAL && tipo2 === TIPO_DATO.DECIMAL) ||
+        (tipo1 === TIPO_DATO.BANDERA && tipo2 === TIPO_DATO.BANDERA) ||
+        (tipo1 === TIPO_DATO.CARACTER && tipo2 === TIPO_DATO.CARACTER) ||
+        (tipo1 === TIPO_DATO.CARACTER && tipo2 === TIPO_DATO.CADENA) ||
+        (tipo1 === TIPO_DATO.CADENA && tipo2 === TIPO_DATO.CARACTER) ||
+        (tipo1 === TIPO_DATO.CADENA && tipo2 === TIPO_DATO.CADENA)) {
             return true
         }
     }

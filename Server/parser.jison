@@ -46,6 +46,7 @@
 "<"                   return 'menor'
 "if"                  return 'if'
 "else"                return 'else'
+"elif"                return 'elif'
 "switch"              return 'switch'
 "case"                return 'case'
 "break"               return 'break'
@@ -230,6 +231,8 @@ ELSE: else llaveA LISTA_INSTRUCCIONES llaveC { $$ = $3; idSentencia += 5; }
 
 ELSE_IF: else if parentesisA EXPRESION parentesisC llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevoElseIf($4, $7, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9; }
         |else if parentesisA EXPRESION parentesisC llaveA llaveC { $$ = Instruccion.nuevoElseIf($4, [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9; }
+        |elif parentesisA EXPRESION parentesisC llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevoElseIf($3, $6, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9; }
+        |elif parentesisA EXPRESION parentesisC llaveA llaveC { $$ = Instruccion.nuevoElseIf($3, [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9; }
 ;
 
 LISTA_ELSE_IF: LISTA_ELSE_IF ELSE_IF    { $1.push($2); $$=$1; }
@@ -286,6 +289,9 @@ DO_WHILE: do llaveA LISTA_INSTRUCCIONES llaveC while parentesisA EXPRESION paren
 
 DECLARAR_FUNCION: TIPO identificador parentesisA parentesisC llaveA LISTA_INSTRUCCIONES llaveC                  { $$ = Instruccion.nuevaDecMetodo($1, $2, [], [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 8 }
                 |TIPO identificador parentesisA LISTA_PARAMETROS  parentesisC llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevaDecMetodo($1, $2, $4, $7, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 8 }
+                
+                |identificador parentesisA parentesisC dosPts TIPO llaveA LISTA_INSTRUCCIONES llaveC                  { $$ = Instruccion.nuevaDecMetodo($5, $1, [], [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 8 }
+                |identificador parentesisA LISTA_PARAMETROS  parentesisC dosPts TIPO llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevaDecMetodo($6, $1, $3, $8, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 8 }
 ;
 
 RUN: run identificador parentesisA parentesisC                        { $$ = Instruccion.nuevoExec($2, [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 5 }
@@ -299,6 +305,9 @@ LISTA_VALORES: LISTA_VALORES coma EXPRESION { $1.push($3); $$ = $1; }
 DECLARAR_METODO: void identificador parentesisA parentesisC llaveA LISTA_INSTRUCCIONES llaveC                   { $$ = Instruccion.nuevaDecMetodo(null, $2, [], $6, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
                 |void identificador parentesisA LISTA_PARAMETROS  parentesisC llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevaDecMetodo(null, $2, $4, $7, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
                 |void identificador parentesisA parentesisC llaveA llaveC                                       { $$ = Instruccion.nuevaDecMetodo(null, $2, [], [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
+                |identificador parentesisA parentesisC dosPts void llaveA LISTA_INSTRUCCIONES llaveC                   { $$ = Instruccion.nuevaDecMetodo(null, $1, [], $7, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
+                |identificador parentesisA LISTA_PARAMETROS  parentesisC dosPts void llaveA LISTA_INSTRUCCIONES llaveC { $$ = Instruccion.nuevaDecMetodo(null, $1, $3, $8, this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
+                |identificador parentesisA parentesisC dosPts void llaveA llaveC                                       { $$ = Instruccion.nuevaDecMetodo(null, $1, [], [], this._$.first_line, this._$.first_column+1, idSentencia); idSentencia += 9 }
 ;
 
 LISTA_PARAMETROS: LISTA_PARAMETROS coma PARAMETRO   { $1.push($3); $$=$1; }

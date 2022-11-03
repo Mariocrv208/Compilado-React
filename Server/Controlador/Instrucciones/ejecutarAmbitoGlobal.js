@@ -29,6 +29,8 @@ function ejecutarAmbitoGlobal(listaInstrucciones, ambito){
             }
         }
         else if(listaInstrucciones[i].tipo === TIPO_INSTRUCCION.ASIGNACION){
+            console.log(listaInstrucciones[i])
+            console.log(ambito)
             var mensaje = Asignacion(listaInstrucciones[i], ambito)
             if(mensaje!=null){
                 textoConsola += mensaje

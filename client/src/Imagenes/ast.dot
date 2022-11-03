@@ -2,50 +2,2014 @@ digraph arbolAst {
 rankdir = "TB"; 
 node[shape = box] 
 nodo0[label="Lista_Ins"] 
-nodo124[label="RUN"] 
-nodo0 -> nodo124
-nodo125[label="id 
-main"] 
-nodo124 -> nodo125
-nodo156[label="DEC_METODO"] 
-nodo0 -> nodo156
-nodo157[label="Tipo Retorno 
+nodo2089[label="DEC_VAR"] 
+nodo0 -> nodo2089
+nodo2090[label="Tipo 
+INT"] 
+nodo2089 -> nodo2090
+nodo2091[label="id 
+varible_1"] 
+nodo2089 -> nodo2091
+nodo2094[label="DEC_VAR"] 
+nodo0 -> nodo2094
+nodo2095[label="Tipo 
+DOUBLE"] 
+nodo2094 -> nodo2095
+nodo2096[label="id 
+varible_2"] 
+nodo2094 -> nodo2096
+nodo2099[label="DEC_VAR"] 
+nodo0 -> nodo2099
+nodo2100[label="Tipo 
+BOOLEAN"] 
+nodo2099 -> nodo2100
+nodo2101[label="id 
+varible_3"] 
+nodo2099 -> nodo2101
+nodo2104[label="DEC_VAR"] 
+nodo0 -> nodo2104
+nodo2105[label="Tipo 
+CHAR"] 
+nodo2104 -> nodo2105
+nodo2106[label="id 
+varible_4"] 
+nodo2104 -> nodo2106
+nodo2109[label="DEC_VAR"] 
+nodo0 -> nodo2109
+nodo2110[label="Tipo 
+STRING"] 
+nodo2109 -> nodo2110
+nodo2111[label="id 
+varible_5"] 
+nodo2109 -> nodo2111
+nodo2121[label="DEC_VAR"] 
+nodo0 -> nodo2121
+nodo2122[label="Tipo 
+CHAR"] 
+nodo2121 -> nodo2122
+nodo2123[label="id 
+variableCHARARRAY"] 
+nodo2121 -> nodo2123
+nodo2124[label="EXPRESION"] 
+nodo2121 -> nodo2124
+nodo2116[label="FUNC_NATIVA"] 
+nodo2124 -> nodo2116
+nodo2117[label="TIPO_FUNC 
+FUNC_TO_CHAR_ARRAY"] 
+nodo2116 -> nodo2117
+nodo2118[label="EXPRESION"] 
+nodo2116 -> nodo2118
+nodo2114[label="ESTA es LA VariaBle Moises: Aver que TAL"] 
+nodo2118 -> nodo2114
+nodo2128[label="DEC_VAR"] 
+nodo0 -> nodo2128
+nodo2129[label="Tipo 
+DOUBLE"] 
+nodo2128 -> nodo2129
+nodo2130[label="id 
+var_2"] 
+nodo2128 -> nodo2130
+nodo2131[label="EXPRESION"] 
+nodo2128 -> nodo2131
+nodo2126[label="15.02"] 
+nodo2131 -> nodo2126
+nodo2135[label="DEC_VAR"] 
+nodo0 -> nodo2135
+nodo2136[label="Tipo 
+DOUBLE"] 
+nodo2135 -> nodo2136
+nodo2137[label="id 
+var_2_1"] 
+nodo2135 -> nodo2137
+nodo2138[label="EXPRESION"] 
+nodo2135 -> nodo2138
+nodo2133[label="2022"] 
+nodo2138 -> nodo2133
+nodo2142[label="DEC_VAR"] 
+nodo0 -> nodo2142
+nodo2143[label="Tipo 
+DOUBLE"] 
+nodo2142 -> nodo2143
+nodo2144[label="id 
+var_2_2"] 
+nodo2142 -> nodo2144
+nodo2145[label="EXPRESION"] 
+nodo2142 -> nodo2145
+nodo2140[label="0.1"] 
+nodo2145 -> nodo2140
+nodo2149[label="DEC_VAR"] 
+nodo0 -> nodo2149
+nodo2150[label="Tipo 
+DOUBLE"] 
+nodo2149 -> nodo2150
+nodo2151[label="id 
+var_2_3"] 
+nodo2149 -> nodo2151
+nodo2152[label="EXPRESION"] 
+nodo2149 -> nodo2152
+nodo2147[label="1"] 
+nodo2152 -> nodo2147
+nodo2156[label="DEC_VAR"] 
+nodo0 -> nodo2156
+nodo2157[label="Tipo 
+DOUBLE"] 
+nodo2156 -> nodo2157
+nodo2158[label="id 
+var_2_4"] 
+nodo2156 -> nodo2158
+nodo2159[label="EXPRESION"] 
+nodo2156 -> nodo2159
+nodo2154[label="51.1589462625459"] 
+nodo2159 -> nodo2154
+nodo2163[label="DEC_VAR"] 
+nodo0 -> nodo2163
+nodo2164[label="Tipo 
+BOOLEAN"] 
+nodo2163 -> nodo2164
+nodo2165[label="id 
+var_3"] 
+nodo2163 -> nodo2165
+nodo2166[label="EXPRESION"] 
+nodo2163 -> nodo2166
+nodo2161[label="true"] 
+nodo2166 -> nodo2161
+nodo2170[label="DEC_VAR"] 
+nodo0 -> nodo2170
+nodo2171[label="Tipo 
+BOOLEAN"] 
+nodo2170 -> nodo2171
+nodo2172[label="id 
+var_3_1"] 
+nodo2170 -> nodo2172
+nodo2173[label="EXPRESION"] 
+nodo2170 -> nodo2173
+nodo2168[label="false"] 
+nodo2173 -> nodo2168
+nodo2177[label="DEC_VAR"] 
+nodo0 -> nodo2177
+nodo2178[label="Tipo 
+CHAR"] 
+nodo2177 -> nodo2178
+nodo2179[label="id 
+var_4_1"] 
+nodo2177 -> nodo2179
+nodo2180[label="EXPRESION"] 
+nodo2177 -> nodo2180
+nodo2175[label="a"] 
+nodo2180 -> nodo2175
+nodo2184[label="DEC_VAR"] 
+nodo0 -> nodo2184
+nodo2185[label="Tipo 
+CHAR"] 
+nodo2184 -> nodo2185
+nodo2186[label="id 
+var_4_2"] 
+nodo2184 -> nodo2186
+nodo2187[label="EXPRESION"] 
+nodo2184 -> nodo2187
+nodo2182[label="2"] 
+nodo2187 -> nodo2182
+nodo2191[label="DEC_VAR"] 
+nodo0 -> nodo2191
+nodo2192[label="Tipo 
+CHAR"] 
+nodo2191 -> nodo2192
+nodo2193[label="id 
+var_4_3"] 
+nodo2191 -> nodo2193
+nodo2194[label="EXPRESION"] 
+nodo2191 -> nodo2194
+nodo2189[label="W"] 
+nodo2194 -> nodo2189
+nodo2198[label="DEC_VAR"] 
+nodo0 -> nodo2198
+nodo2199[label="Tipo 
+CHAR"] 
+nodo2198 -> nodo2199
+nodo2200[label="id 
+var_4_4"] 
+nodo2198 -> nodo2200
+nodo2201[label="EXPRESION"] 
+nodo2198 -> nodo2201
+nodo2196[label="@"] 
+nodo2201 -> nodo2196
+nodo2205[label="DEC_VAR"] 
+nodo0 -> nodo2205
+nodo2206[label="Tipo 
+CHAR"] 
+nodo2205 -> nodo2206
+nodo2207[label="id 
+var_4_5"] 
+nodo2205 -> nodo2207
+nodo2208[label="EXPRESION"] 
+nodo2205 -> nodo2208
+nodo2203[label="!"] 
+nodo2208 -> nodo2203
+nodo2212[label="DEC_VAR"] 
+nodo0 -> nodo2212
+nodo2213[label="Tipo 
+CHAR"] 
+nodo2212 -> nodo2213
+nodo2214[label="id 
+var_4_6"] 
+nodo2212 -> nodo2214
+nodo2215[label="EXPRESION"] 
+nodo2212 -> nodo2215
+nodo2210[label="%"] 
+nodo2215 -> nodo2210
+nodo2219[label="DEC_VAR"] 
+nodo0 -> nodo2219
+nodo2220[label="Tipo 
+CHAR"] 
+nodo2219 -> nodo2220
+nodo2221[label="id 
+var_4_7"] 
+nodo2219 -> nodo2221
+nodo2222[label="EXPRESION"] 
+nodo2219 -> nodo2222
+nodo2217[label="/"] 
+nodo2222 -> nodo2217
+nodo2226[label="DEC_VAR"] 
+nodo0 -> nodo2226
+nodo2227[label="Tipo 
+STRING"] 
+nodo2226 -> nodo2227
+nodo2228[label="id 
+var_5_1"] 
+nodo2226 -> nodo2228
+nodo2229[label="EXPRESION"] 
+nodo2226 -> nodo2229
+nodo2224[label="Hola"] 
+nodo2229 -> nodo2224
+nodo2233[label="DEC_VAR"] 
+nodo0 -> nodo2233
+nodo2234[label="Tipo 
+STRING"] 
+nodo2233 -> nodo2234
+nodo2235[label="id 
+var_5_2"] 
+nodo2233 -> nodo2235
+nodo2236[label="EXPRESION"] 
+nodo2233 -> nodo2236
+nodo2231[label="Mundo"] 
+nodo2236 -> nodo2231
+nodo2240[label="DEC_VAR"] 
+nodo0 -> nodo2240
+nodo2241[label="Tipo 
+STRING"] 
+nodo2240 -> nodo2241
+nodo2242[label="id 
+var_5_3"] 
+nodo2240 -> nodo2242
+nodo2243[label="EXPRESION"] 
+nodo2240 -> nodo2243
+nodo2238[label="este es un mensaje @"] 
+nodo2243 -> nodo2238
+nodo2247[label="DEC_VAR"] 
+nodo0 -> nodo2247
+nodo2248[label="Tipo 
+STRING"] 
+nodo2247 -> nodo2248
+nodo2249[label="id 
+var_5_4"] 
+nodo2247 -> nodo2249
+nodo2250[label="EXPRESION"] 
+nodo2247 -> nodo2250
+nodo2245[label="Organizacion de lenguajes y compiladores 1"] 
+nodo2250 -> nodo2245
+nodo2254[label="DEC_VAR"] 
+nodo0 -> nodo2254
+nodo2255[label="Tipo 
+STRING"] 
+nodo2254 -> nodo2255
+nodo2256[label="id 
+var_5_5"] 
+nodo2254 -> nodo2256
+nodo2257[label="EXPRESION"] 
+nodo2254 -> nodo2257
+nodo2252[label="Compiladores\n1"] 
+nodo2257 -> nodo2252
+nodo2261[label="DEC_VAR"] 
+nodo0 -> nodo2261
+nodo2262[label="Tipo 
+STRING"] 
+nodo2261 -> nodo2262
+nodo2263[label="id 
+var_5_6"] 
+nodo2261 -> nodo2263
+nodo2264[label="EXPRESION"] 
+nodo2261 -> nodo2264
+nodo2259[label="Compiladores\\1\\"] 
+nodo2264 -> nodo2259
+nodo2268[label="DEC_VAR"] 
+nodo0 -> nodo2268
+nodo2269[label="Tipo 
+STRING"] 
+nodo2268 -> nodo2269
+nodo2270[label="id 
+var_5_7"] 
+nodo2268 -> nodo2270
+nodo2271[label="EXPRESION"] 
+nodo2268 -> nodo2271
+nodo2266[label="compiladores\"1\""] 
+nodo2271 -> nodo2266
+nodo2275[label="DEC_VAR"] 
+nodo0 -> nodo2275
+nodo2276[label="Tipo 
+STRING"] 
+nodo2275 -> nodo2276
+nodo2277[label="id 
+var_5_8"] 
+nodo2275 -> nodo2277
+nodo2278[label="EXPRESION"] 
+nodo2275 -> nodo2278
+nodo2273[label="\tCompiladores 1"] 
+nodo2278 -> nodo2273
+nodo2282[label="DEC_VAR"] 
+nodo0 -> nodo2282
+nodo2283[label="Tipo 
+STRING"] 
+nodo2282 -> nodo2283
+nodo2284[label="id 
+var_5_9"] 
+nodo2282 -> nodo2284
+nodo2285[label="EXPRESION"] 
+nodo2282 -> nodo2285
+nodo2280[label="\'compiladores 1\'"] 
+nodo2285 -> nodo2280
+nodo2329[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2329
+nodo2330[label="Id 
+var_1"] 
+nodo2329 -> nodo2330
+nodo2331[label="EXPRESION"] 
+nodo2329 -> nodo2331
+nodo2326[label="RESTA"] 
+nodo2331 -> nodo2326
+nodo2321[label="SUMA"] 
+nodo2326 -> nodo2321
+nodo2316[label="RESTA"] 
+nodo2321 -> nodo2316
+nodo2311[label="SUMA"] 
+nodo2316 -> nodo2311
+nodo2306[label="RESTA"] 
+nodo2311 -> nodo2306
+nodo2301[label="SUMA"] 
+nodo2306 -> nodo2301
+nodo2296[label="RESTA"] 
+nodo2301 -> nodo2296
+nodo2291[label="SUMA"] 
+nodo2296 -> nodo2291
+nodo2287[label="1"] 
+nodo2291 -> nodo2287
+nodo2289[label="2"] 
+nodo2291 -> nodo2289
+nodo2294[label="3"] 
+nodo2296 -> nodo2294
+nodo2299[label="4"] 
+nodo2301 -> nodo2299
+nodo2304[label="5"] 
+nodo2306 -> nodo2304
+nodo2309[label="6"] 
+nodo2311 -> nodo2309
+nodo2314[label="7"] 
+nodo2316 -> nodo2314
+nodo2319[label="8"] 
+nodo2321 -> nodo2319
+nodo2324[label="9"] 
+nodo2326 -> nodo2324
+nodo2375[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2375
+nodo2376[label="Id 
+var_1"] 
+nodo2375 -> nodo2376
+nodo2377[label="EXPRESION"] 
+nodo2375 -> nodo2377
+nodo2372[label="SUMA"] 
+nodo2377 -> nodo2372
+nodo2347[label="SUMA"] 
+nodo2372 -> nodo2347
+nodo2342[label="SUMA"] 
+nodo2347 -> nodo2342
+nodo2337[label="SUMA"] 
+nodo2342 -> nodo2337
+nodo2333[label="1"] 
+nodo2337 -> nodo2333
+nodo2335[label="2"] 
+nodo2337 -> nodo2335
+nodo2340[label="3"] 
+nodo2342 -> nodo2340
+nodo2345[label="4"] 
+nodo2347 -> nodo2345
+nodo2369[label="SUMA"] 
+nodo2372 -> nodo2369
+nodo2364[label="SUMA"] 
+nodo2369 -> nodo2364
+nodo2359[label="SUMA"] 
+nodo2364 -> nodo2359
+nodo2354[label="SUMA"] 
+nodo2359 -> nodo2354
+nodo2350[label="5"] 
+nodo2354 -> nodo2350
+nodo2352[label="6"] 
+nodo2354 -> nodo2352
+nodo2357[label="7"] 
+nodo2359 -> nodo2357
+nodo2362[label="8"] 
+nodo2364 -> nodo2362
+nodo2367[label="9"] 
+nodo2369 -> nodo2367
+nodo2416[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2416
+nodo2417[label="Id 
+var_1"] 
+nodo2416 -> nodo2417
+nodo2418[label="EXPRESION"] 
+nodo2416 -> nodo2418
+nodo2413[label="SUMA"] 
+nodo2418 -> nodo2413
+nodo2392[label="SUMA"] 
+nodo2413 -> nodo2392
+nodo2381[label="UMENOS"] 
+nodo2392 -> nodo2381
+nodo2379[label="1"] 
+nodo2381 -> nodo2379
+nodo2389[label="MULTIPLICACION"] 
+nodo2392 -> nodo2389
+nodo2385[label="2"] 
+nodo2389 -> nodo2385
+nodo2387[label="3"] 
+nodo2389 -> nodo2387
+nodo2409[label="MODULO"] 
+nodo2413 -> nodo2409
+nodo2404[label="DIVISION"] 
+nodo2409 -> nodo2404
+nodo2399[label="MULTIPLICACION"] 
+nodo2404 -> nodo2399
+nodo2395[label="4"] 
+nodo2399 -> nodo2395
+nodo2397[label="8"] 
+nodo2399 -> nodo2397
+nodo2402[label="8"] 
+nodo2404 -> nodo2402
+nodo2407[label="5789"] 
+nodo2409 -> nodo2407
+nodo2468[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2468
+nodo2469[label="Id 
+var_3"] 
+nodo2468 -> nodo2469
+nodo2470[label="EXPRESION"] 
+nodo2468 -> nodo2470
+nodo2465[label="MAYOR"] 
+nodo2470 -> nodo2465
+nodo2455[label="SUMA"] 
+nodo2465 -> nodo2455
+nodo2439[label="SUMA"] 
+nodo2455 -> nodo2439
+nodo2429[label="RESTA"] 
+nodo2439 -> nodo2429
+nodo2424[label="SUMA"] 
+nodo2429 -> nodo2424
+nodo2420[label="5"] 
+nodo2424 -> nodo2420
+nodo2422[label="5"] 
+nodo2424 -> nodo2422
+nodo2427[label="8"] 
+nodo2429 -> nodo2427
+nodo2436[label="MULTIPLICACION"] 
+nodo2439 -> nodo2436
+nodo2432[label="6"] 
+nodo2436 -> nodo2432
+nodo2434[label="8"] 
+nodo2436 -> nodo2434
+nodo2451[label="MODULO"] 
+nodo2455 -> nodo2451
+nodo2446[label="DIVISION"] 
+nodo2451 -> nodo2446
+nodo2442[label="1"] 
+nodo2446 -> nodo2442
+nodo2444[label="7"] 
+nodo2446 -> nodo2444
+nodo2449[label="9"] 
+nodo2451 -> nodo2449
+nodo2462[label="SUMA"] 
+nodo2465 -> nodo2462
+nodo2458[label="45"] 
+nodo2462 -> nodo2458
+nodo2460[label="6"] 
+nodo2462 -> nodo2460
+nodo2520[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2520
+nodo2521[label="Id 
+var_3"] 
+nodo2520 -> nodo2521
+nodo2522[label="EXPRESION"] 
+nodo2520 -> nodo2522
+nodo2517[label="MENOR"] 
+nodo2522 -> nodo2517
+nodo2507[label="SUMA"] 
+nodo2517 -> nodo2507
+nodo2481[label="RESTA"] 
+nodo2507 -> nodo2481
+nodo2476[label="SUMA"] 
+nodo2481 -> nodo2476
+nodo2472[label="6"] 
+nodo2476 -> nodo2472
+nodo2474[label="4"] 
+nodo2476 -> nodo2474
+nodo2479[label="7"] 
+nodo2481 -> nodo2479
+nodo2503[label="MODULO"] 
+nodo2507 -> nodo2503
+nodo2498[label="DIVISION"] 
+nodo2503 -> nodo2498
+nodo2493[label="MULTIPLICACION"] 
+nodo2498 -> nodo2493
+nodo2488[label="MULTIPLICACION"] 
+nodo2493 -> nodo2488
+nodo2484[label="9"] 
+nodo2488 -> nodo2484
+nodo2486[label="8"] 
+nodo2488 -> nodo2486
+nodo2491[label="9"] 
+nodo2493 -> nodo2491
+nodo2496[label="7"] 
+nodo2498 -> nodo2496
+nodo2501[label="9"] 
+nodo2503 -> nodo2501
+nodo2514[label="SUMA"] 
+nodo2517 -> nodo2514
+nodo2510[label="45"] 
+nodo2514 -> nodo2510
+nodo2512[label="6"] 
+nodo2514 -> nodo2512
+nodo2572[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2572
+nodo2573[label="Id 
+var_3"] 
+nodo2572 -> nodo2573
+nodo2574[label="EXPRESION"] 
+nodo2572 -> nodo2574
+nodo2569[label="MAYORIGUAL"] 
+nodo2574 -> nodo2569
+nodo2559[label="SUMA"] 
+nodo2569 -> nodo2559
+nodo2543[label="SUMA"] 
+nodo2559 -> nodo2543
+nodo2533[label="RESTA"] 
+nodo2543 -> nodo2533
+nodo2528[label="SUMA"] 
+nodo2533 -> nodo2528
+nodo2524[label="7"] 
+nodo2528 -> nodo2524
+nodo2526[label="3"] 
+nodo2528 -> nodo2526
+nodo2531[label="8"] 
+nodo2533 -> nodo2531
+nodo2540[label="MULTIPLICACION"] 
+nodo2543 -> nodo2540
+nodo2536[label="6"] 
+nodo2540 -> nodo2536
+nodo2538[label="8"] 
+nodo2540 -> nodo2538
+nodo2555[label="MODULO"] 
+nodo2559 -> nodo2555
+nodo2550[label="DIVISION"] 
+nodo2555 -> nodo2550
+nodo2546[label="6"] 
+nodo2550 -> nodo2546
+nodo2548[label="7"] 
+nodo2550 -> nodo2548
+nodo2553[label="9"] 
+nodo2555 -> nodo2553
+nodo2566[label="SUMA"] 
+nodo2569 -> nodo2566
+nodo2562[label="45"] 
+nodo2566 -> nodo2562
+nodo2564[label="6"] 
+nodo2566 -> nodo2564
+nodo2624[label="ASIGNAR_VAR"] 
+nodo0 -> nodo2624
+nodo2625[label="Id 
+var_3"] 
+nodo2624 -> nodo2625
+nodo2626[label="EXPRESION"] 
+nodo2624 -> nodo2626
+nodo2621[label="MENORIGUAL"] 
+nodo2626 -> nodo2621
+nodo2611[label="RESTA"] 
+nodo2621 -> nodo2611
+nodo2595[label="SUMA"] 
+nodo2611 -> nodo2595
+nodo2585[label="RESTA"] 
+nodo2595 -> nodo2585
+nodo2580[label="SUMA"] 
+nodo2585 -> nodo2580
+nodo2576[label="8"] 
+nodo2580 -> nodo2576
+nodo2578[label="2"] 
+nodo2580 -> nodo2578
+nodo2583[label="7"] 
+nodo2585 -> nodo2583
+nodo2592[label="MULTIPLICACION"] 
+nodo2595 -> nodo2592
+nodo2588[label="9"] 
+nodo2592 -> nodo2588
+nodo2590[label="8"] 
+nodo2592 -> nodo2590
+nodo2607[label="MODULO"] 
+nodo2611 -> nodo2607
+nodo2602[label="DIVISION"] 
+nodo2607 -> nodo2602
+nodo2598[label="9"] 
+nodo2602 -> nodo2598
+nodo2600[label="7"] 
+nodo2602 -> nodo2600
+nodo2605[label="9"] 
+nodo2607 -> nodo2605
+nodo2618[label="SUMA"] 
+nodo2621 -> nodo2618
+nodo2614[label="45"] 
+nodo2618 -> nodo2614
+nodo2616[label="6"] 
+nodo2618 -> nodo2616
+nodo2635[label="DEC_VAR"] 
+nodo0 -> nodo2635
+nodo2636[label="Tipo 
+INT"] 
+nodo2635 -> nodo2636
+nodo2637[label="id 
+v_5"] 
+nodo2635 -> nodo2637
+nodo2638[label="EXPRESION"] 
+nodo2635 -> nodo2638
+nodo2630[label="CASTEO"] 
+nodo2638 -> nodo2630
+nodo2631[label="Tipo Deseado 
+INT"] 
+nodo2630 -> nodo2631
+nodo2632[label="Expresion"] 
+nodo2630 -> nodo2632
+nodo2628[label="hola"] 
+nodo2632 -> nodo2628
+nodo2653[label="DEC_VAR"] 
+nodo0 -> nodo2653
+nodo2654[label="Tipo 
+STRING"] 
+nodo2653 -> nodo2654
+nodo2655[label="id 
+v_1"] 
+nodo2653 -> nodo2655
+nodo2656[label="EXPRESION"] 
+nodo2653 -> nodo2656
+nodo2648[label="CASTEO"] 
+nodo2656 -> nodo2648
+nodo2649[label="Tipo Deseado 
+STRING"] 
+nodo2648 -> nodo2649
+nodo2650[label="Expresion"] 
+nodo2648 -> nodo2650
+nodo2644[label="MODULO"] 
+nodo2650 -> nodo2644
+nodo2640[label="12"] 
+nodo2644 -> nodo2640
+nodo2642[label="8"] 
+nodo2644 -> nodo2642
+nodo2665[label="DEC_VAR"] 
+nodo0 -> nodo2665
+nodo2666[label="Tipo 
+CHAR"] 
+nodo2665 -> nodo2666
+nodo2667[label="id 
+v_3"] 
+nodo2665 -> nodo2667
+nodo2668[label="EXPRESION"] 
+nodo2665 -> nodo2668
+nodo2660[label="CASTEO"] 
+nodo2668 -> nodo2660
+nodo2661[label="Tipo Deseado 
+CHAR"] 
+nodo2660 -> nodo2661
+nodo2662[label="Expresion"] 
+nodo2660 -> nodo2662
+nodo2658[label="true"] 
+nodo2662 -> nodo2658
+nodo2677[label="DEC_VAR"] 
+nodo0 -> nodo2677
+nodo2678[label="Tipo 
+CHAR"] 
+nodo2677 -> nodo2678
+nodo2679[label="id 
+v_4"] 
+nodo2677 -> nodo2679
+nodo2680[label="EXPRESION"] 
+nodo2677 -> nodo2680
+nodo2672[label="CASTEO"] 
+nodo2680 -> nodo2672
+nodo2673[label="Tipo Deseado 
+CHAR"] 
+nodo2672 -> nodo2673
+nodo2674[label="Expresion"] 
+nodo2672 -> nodo2674
+nodo2670[label="A"] 
+nodo2674 -> nodo2670
+nodo2901[label="DEC_FUNCION"] 
+nodo0 -> nodo2901
+nodo2902[label="Tipo Retorno 
+STRING"] 
+nodo2901 -> nodo2902
+nodo2903[label="Nombre 
+division"] 
+nodo2901 -> nodo2903
+nodo3606[label="DEC_FUNCION"] 
+nodo0 -> nodo3606
+nodo3607[label="Tipo Retorno 
+INT"] 
+nodo3606 -> nodo3607
+nodo3608[label="Nombre 
+Multiplicacion"] 
+nodo3606 -> nodo3608
+nodo3609[label="LISTA_PARAMS"] 
+nodo3606 -> nodo3609
+nodo3610[label="LISTA_INS"] 
+nodo3606 -> nodo3610
+nodo3127[label="SENTENCIA_IF"] 
+nodo3610 -> nodo3127
+nodo3119[label="IF_SIMPLE"] 
+nodo3127 -> nodo3119
+nodo3120[label="CONDICION"] 
+nodo3119 -> nodo3120
+nodo3121[label="LISTA_INS"] 
+nodo3119 -> nodo3121
+nodo2917[label="IGUALIGUAL"] 
+nodo3120 -> nodo2917
+nodo2913[label="Universidad"] 
+nodo2917 -> nodo2913
+nodo2915[label="usac"] 
+nodo2917 -> nodo2915
+nodo2957[label="ASIGNAR_VAR"] 
+nodo3121 -> nodo2957
+nodo2958[label="Id 
+var_1"] 
+nodo2957 -> nodo2958
+nodo2959[label="EXPRESION"] 
+nodo2957 -> nodo2959
+nodo2954[label="SUMA"] 
+nodo2959 -> nodo2954
+nodo2933[label="SUMA"] 
+nodo2954 -> nodo2933
+nodo2922[label="UMENOS"] 
+nodo2933 -> nodo2922
+nodo2920[label="1"] 
+nodo2922 -> nodo2920
+nodo2930[label="MULTIPLICACION"] 
+nodo2933 -> nodo2930
+nodo2926[label="2"] 
+nodo2930 -> nodo2926
+nodo2928[label="3"] 
+nodo2930 -> nodo2928
+nodo2951[label="DIVISION"] 
+nodo2954 -> nodo2951
+nodo2940[label="MULTIPLICACION"] 
+nodo2951 -> nodo2940
+nodo2936[label="4"] 
+nodo2940 -> nodo2936
+nodo2938[label="8"] 
+nodo2940 -> nodo2938
+nodo2947[label="POTENCIA"] 
+nodo2951 -> nodo2947
+nodo2943[label="8"] 
+nodo2947 -> nodo2943
+nodo2945[label="2"] 
+nodo2947 -> nodo2945
+nodo2973[label="ASIGNAR_VAR"] 
+nodo3121 -> nodo2973
+nodo2974[label="Id 
+var_2"] 
+nodo2973 -> nodo2974
+nodo2975[label="EXPRESION"] 
+nodo2973 -> nodo2975
+nodo2970[label="SUMA"] 
+nodo2975 -> nodo2970
+nodo2965[label="SUMA"] 
+nodo2970 -> nodo2965
+nodo2961[label="1.2"] 
+nodo2965 -> nodo2961
+nodo2963[label="78.1"] 
+nodo2965 -> nodo2963
+nodo2968[label="89"] 
+nodo2970 -> nodo2968
+nodo2984[label="DEC_VAR"] 
+nodo3121 -> nodo2984
+nodo2985[label="Tipo 
+DOUBLE"] 
+nodo2984 -> nodo2985
+nodo2986[label="id 
+val1"] 
+nodo2984 -> nodo2986
+nodo2987[label="EXPRESION"] 
+nodo2984 -> nodo2987
+nodo2979[label="FUNC_NATIVA"] 
+nodo2987 -> nodo2979
+nodo2980[label="TIPO_FUNC 
+FUNC_ROUND"] 
+nodo2979 -> nodo2980
+nodo2981[label="EXPRESION"] 
+nodo2979 -> nodo2981
+nodo2977[label="5.8"] 
+nodo2981 -> nodo2977
+nodo3006[label="ASIGNAR_VAR"] 
+nodo3121 -> nodo3006
+nodo3007[label="Id 
+val1"] 
+nodo3006 -> nodo3007
+nodo3008[label="EXPRESION"] 
+nodo3006 -> nodo3008
+nodo3001[label="FUNC_NATIVA"] 
+nodo3008 -> nodo3001
+nodo3002[label="TIPO_FUNC 
+FUNC_ROUND"] 
+nodo3001 -> nodo3002
+nodo3003[label="EXPRESION"] 
+nodo3001 -> nodo3003
+nodo2998[label="SUMA"] 
+nodo3003 -> nodo2998
+nodo2993[label="SUMA"] 
+nodo2998 -> nodo2993
+nodo2989[label="5.8"] 
+nodo2993 -> nodo2989
+nodo2991[label="1.2"] 
+nodo2993 -> nodo2991
+nodo2996[label="0.5"] 
+nodo2998 -> nodo2996
+nodo3012[label="LLAMADA_FUNC"] 
+nodo3121 -> nodo3012
+nodo3013[label="id"] 
+nodo3012 -> nodo3013
+nodo3014[label="LISTA_VALORES"] 
+nodo3012 -> nodo3014
+nodo3010[label="tricentenadira"] 
+nodo3014 -> nodo3010
+nodo3115[label="SENTENCIA_IF"] 
+nodo3121 -> nodo3115
+nodo3107[label="IF_SIMPLE"] 
+nodo3115 -> nodo3107
+nodo3108[label="CONDICION"] 
+nodo3107 -> nodo3108
+nodo3109[label="LISTA_INS"] 
+nodo3107 -> nodo3109
+nodo3021[label="IGUALIGUAL"] 
+nodo3108 -> nodo3021
+nodo3017[label="Universidad"] 
+nodo3021 -> nodo3017
+nodo3019[label="usac"] 
+nodo3021 -> nodo3019
+nodo3026[label="LLAMADA_FUNC"] 
+nodo3109 -> nodo3026
+nodo3027[label="id"] 
+nodo3026 -> nodo3027
+nodo3028[label="LISTA_VALORES"] 
+nodo3026 -> nodo3028
+nodo3024[label="tricentenadira"] 
+nodo3028 -> nodo3024
+nodo3103[label="SENTENCIA_IF"] 
+nodo3109 -> nodo3103
+nodo3095[label="IF_SIMPLE"] 
+nodo3103 -> nodo3095
+nodo3096[label="CONDICION"] 
+nodo3095 -> nodo3096
+nodo3097[label="LISTA_INS"] 
+nodo3095 -> nodo3097
+nodo3035[label="IGUALIGUAL"] 
+nodo3096 -> nodo3035
+nodo3031[label="Universidad"] 
+nodo3035 -> nodo3031
+nodo3033[label="usac"] 
+nodo3035 -> nodo3033
+nodo3040[label="LLAMADA_FUNC"] 
+nodo3097 -> nodo3040
+nodo3041[label="id"] 
+nodo3040 -> nodo3041
+nodo3042[label="LISTA_VALORES"] 
+nodo3040 -> nodo3042
+nodo3038[label="tricentenadira"] 
+nodo3042 -> nodo3038
+nodo3091[label="SENTENCIA_IF"] 
+nodo3097 -> nodo3091
+nodo3083[label="IF_SIMPLE"] 
+nodo3091 -> nodo3083
+nodo3084[label="CONDICION"] 
+nodo3083 -> nodo3084
+nodo3085[label="LISTA_INS"] 
+nodo3083 -> nodo3085
+nodo3049[label="IGUALIGUAL"] 
+nodo3084 -> nodo3049
+nodo3045[label="Universidad"] 
+nodo3049 -> nodo3045
+nodo3047[label="usac"] 
+nodo3049 -> nodo3047
+nodo3054[label="LLAMADA_FUNC"] 
+nodo3085 -> nodo3054
+nodo3055[label="id"] 
+nodo3054 -> nodo3055
+nodo3056[label="LISTA_VALORES"] 
+nodo3054 -> nodo3056
+nodo3052[label="tricentenadira"] 
+nodo3056 -> nodo3052
+nodo3066[label="DEC_VAR"] 
+nodo3085 -> nodo3066
+nodo3067[label="Tipo 
+CHAR"] 
+nodo3066 -> nodo3067
+nodo3068[label="id 
+v_1"] 
+nodo3066 -> nodo3068
+nodo3069[label="EXPRESION"] 
+nodo3066 -> nodo3069
+nodo3061[label="CASTEO"] 
+nodo3069 -> nodo3061
+nodo3062[label="Tipo Deseado 
+CHAR"] 
+nodo3061 -> nodo3062
+nodo3063[label="Expresion"] 
+nodo3061 -> nodo3063
+nodo3059[label="12"] 
+nodo3063 -> nodo3059
+nodo3078[label="DEC_VAR"] 
+nodo3085 -> nodo3078
+nodo3079[label="Tipo 
+CHAR"] 
+nodo3078 -> nodo3079
+nodo3080[label="id 
+v_2"] 
+nodo3078 -> nodo3080
+nodo3081[label="EXPRESION"] 
+nodo3078 -> nodo3081
+nodo3073[label="CASTEO"] 
+nodo3081 -> nodo3073
+nodo3074[label="Tipo Deseado 
+CHAR"] 
+nodo3073 -> nodo3074
+nodo3075[label="Expresion"] 
+nodo3073 -> nodo3075
+nodo3071[label="12.25"] 
+nodo3075 -> nodo3071
+nodo3250[label="SENTENCIA_IF"] 
+nodo3610 -> nodo3250
+nodo3220[label="IF_SIMPLE"] 
+nodo3250 -> nodo3220
+nodo3221[label="CONDICION"] 
+nodo3220 -> nodo3221
+nodo3222[label="LISTA_INS"] 
+nodo3220 -> nodo3222
+nodo3160[label="OR"] 
+nodo3221 -> nodo3160
+nodo3150[label="OR"] 
+nodo3160 -> nodo3150
+nodo3140[label="IGUALIGUAL"] 
+nodo3150 -> nodo3140
+nodo3131[label="anio"] 
+nodo3140 -> nodo3131
+nodo3137[label="SUMA"] 
+nodo3140 -> nodo3137
+nodo3133[label="2022"] 
+nodo3137 -> nodo3133
+nodo3135[label="22"] 
+nodo3137 -> nodo3135
+nodo3147[label="IGUALIGUAL"] 
+nodo3150 -> nodo3147
+nodo3143[label="semestre"] 
+nodo3147 -> nodo3143
+nodo3145[label="Segundo"] 
+nodo3147 -> nodo3145
+nodo3157[label="MAYOR"] 
+nodo3160 -> nodo3157
+nodo3153[label="4"] 
+nodo3157 -> nodo3153
+nodo3155[label="2"] 
+nodo3157 -> nodo3155
+nodo3165[label="LLAMADA_FUNC"] 
+nodo3222 -> nodo3165
+nodo3166[label="id"] 
+nodo3165 -> nodo3166
+nodo3167[label="LISTA_VALORES"] 
+nodo3165 -> nodo3167
+nodo3163[label="Usac!!!!"] 
+nodo3167 -> nodo3163
+nodo3177[label="DEC_VAR"] 
+nodo3222 -> nodo3177
+nodo3178[label="Tipo 
+BOOLEAN"] 
+nodo3177 -> nodo3178
+nodo3179[label="id 
+v_5"] 
+nodo3177 -> nodo3179
+nodo3180[label="EXPRESION"] 
+nodo3177 -> nodo3180
+nodo3172[label="CASTEO"] 
+nodo3180 -> nodo3172
+nodo3173[label="Tipo Deseado 
+BOOLEAN"] 
+nodo3172 -> nodo3173
+nodo3174[label="Expresion"] 
+nodo3172 -> nodo3174
+nodo3170[label="hola"] 
+nodo3174 -> nodo3170
+nodo3216[label="SENTENCIA_IF"] 
+nodo3222 -> nodo3216
+nodo3208[label="IF_SIMPLE"] 
+nodo3216 -> nodo3208
+nodo3209[label="CONDICION"] 
+nodo3208 -> nodo3209
+nodo3210[label="LISTA_INS"] 
+nodo3208 -> nodo3210
+nodo3186[label="MAYORIGUAL"] 
+nodo3209 -> nodo3186
+nodo3182[label="var_1"] 
+nodo3186 -> nodo3182
+nodo3184[label="var_2"] 
+nodo3186 -> nodo3184
+nodo3191[label="LLAMADA_FUNC"] 
+nodo3210 -> nodo3191
+nodo3192[label="id"] 
+nodo3191 -> nodo3192
+nodo3193[label="LISTA_VALORES"] 
+nodo3191 -> nodo3193
+nodo3189[label="Usac!!!!"] 
+nodo3193 -> nodo3189
+nodo3203[label="DEC_VAR"] 
+nodo3210 -> nodo3203
+nodo3204[label="Tipo 
+CHAR"] 
+nodo3203 -> nodo3204
+nodo3205[label="id 
+v_5"] 
+nodo3203 -> nodo3205
+nodo3206[label="EXPRESION"] 
+nodo3203 -> nodo3206
+nodo3198[label="CASTEO"] 
+nodo3206 -> nodo3198
+nodo3199[label="Tipo Deseado 
+CHAR"] 
+nodo3198 -> nodo3199
+nodo3200[label="Expresion"] 
+nodo3198 -> nodo3200
+nodo3196[label="hola"] 
+nodo3200 -> nodo3196
+nodo3251[label="ELSE"] 
+nodo3250 -> nodo3251
+nodo3234[label="ASIGNAR_VAR"] 
+nodo3251 -> nodo3234
+nodo3235[label="Id 
+var_1"] 
+nodo3234 -> nodo3235
+nodo3236[label="EXPRESION"] 
+nodo3234 -> nodo3236
+nodo3231[label="SUMA"] 
+nodo3236 -> nodo3231
+nodo3228[label="1"] 
+nodo3231 -> nodo3228
+nodo3230[label="INCREMENTO
+var_1"] 
+nodo3231 -> nodo3230
+nodo3240[label="LLAMADA_FUNC"] 
+nodo3251 -> nodo3240
+nodo3241[label="id"] 
+nodo3240 -> nodo3241
+nodo3242[label="LISTA_VALORES"] 
+nodo3240 -> nodo3242
+nodo3238[label="sale en otro semestre :( "] 
+nodo3242 -> nodo3238
+nodo3521[label="SENTENCIA_IF"] 
+nodo3610 -> nodo3521
+nodo3291[label="IF_SIMPLE"] 
+nodo3521 -> nodo3291
+nodo3292[label="CONDICION"] 
+nodo3291 -> nodo3292
+nodo3293[label="LISTA_INS"] 
+nodo3291 -> nodo3293
+nodo3280[label="AND"] 
+nodo3292 -> nodo3280
+nodo3265[label="IGUALIGUAL"] 
+nodo3280 -> nodo3265
+nodo3258[label="LLAMADA_FUNC"] 
+nodo3265 -> nodo3258
+nodo3259[label="id"] 
+nodo3258 -> nodo3259
+nodo3260[label="LISTA_VALORES"] 
+nodo3258 -> nodo3260
+nodo3254[label="1"] 
+nodo3260 -> nodo3254
+nodo3256[label="2"] 
+nodo3260 -> nodo3256
+nodo3263[label="3"] 
+nodo3265 -> nodo3263
+nodo3277[label="IGUALIGUAL"] 
+nodo3280 -> nodo3277
+nodo3272[label="SUMA"] 
+nodo3277 -> nodo3272
+nodo3268[label="45"] 
+nodo3272 -> nodo3268
+nodo3270[label="56"] 
+nodo3272 -> nodo3270
+nodo3275[label="12"] 
+nodo3277 -> nodo3275
+nodo3285[label="LLAMADA_FUNC"] 
+nodo3293 -> nodo3285
+nodo3286[label="id"] 
+nodo3285 -> nodo3286
+nodo3287[label="LISTA_VALORES"] 
+nodo3285 -> nodo3287
+nodo3283[label="Esta bien"] 
+nodo3287 -> nodo3283
+nodo3290[label="DECREMENTO
+var_1"] 
+nodo3293 -> nodo3290
+nodo3342[label="ELSE_IF"] 
+nodo3521 -> nodo3342
+nodo3343[label="CONDICION"] 
+nodo3342 -> nodo3343
+nodo3344[label="LISTA_INS"] 
+nodo3342 -> nodo3344
+nodo3320[label="OR"] 
+nodo3343 -> nodo3320
+nodo3310[label="IGUALIGUAL"] 
+nodo3320 -> nodo3310
+nodo3303[label="LLAMADA_FUNC"] 
+nodo3310 -> nodo3303
+nodo3304[label="id"] 
+nodo3303 -> nodo3304
+nodo3305[label="LISTA_VALORES"] 
+nodo3303 -> nodo3305
+nodo3299[label="1"] 
+nodo3305 -> nodo3299
+nodo3301[label="3"] 
+nodo3305 -> nodo3301
+nodo3308[label="4"] 
+nodo3310 -> nodo3308
+nodo3317[label="IGUALIGUAL"] 
+nodo3320 -> nodo3317
+nodo3313[label="Universidad"] 
+nodo3317 -> nodo3313
+nodo3315[label="usac"] 
+nodo3317 -> nodo3315
+nodo3325[label="LLAMADA_FUNC"] 
+nodo3344 -> nodo3325
+nodo3326[label="id"] 
+nodo3325 -> nodo3326
+nodo3327[label="LISTA_VALORES"] 
+nodo3325 -> nodo3327
+nodo3323[label="Esta es otra suma"] 
+nodo3327 -> nodo3323
+nodo3337[label="DEC_VAR"] 
+nodo3344 -> nodo3337
+nodo3338[label="Tipo 
+BOOLEAN"] 
+nodo3337 -> nodo3338
+nodo3339[label="id 
+v_4"] 
+nodo3337 -> nodo3339
+nodo3340[label="EXPRESION"] 
+nodo3337 -> nodo3340
+nodo3332[label="CASTEO"] 
+nodo3340 -> nodo3332
+nodo3333[label="Tipo Deseado 
+BOOLEAN"] 
+nodo3332 -> nodo3333
+nodo3334[label="Expresion"] 
+nodo3332 -> nodo3334
+nodo3330[label="A"] 
+nodo3334 -> nodo3330
+nodo3512[label="ELSE_IF"] 
+nodo3521 -> nodo3512
+nodo3513[label="CONDICION"] 
+nodo3512 -> nodo3513
+nodo3514[label="LISTA_INS"] 
+nodo3512 -> nodo3514
+nodo3367[label="IGUALIGUAL"] 
+nodo3513 -> nodo3367
+nodo3355[label="LLAMADA_FUNC"] 
+nodo3367 -> nodo3355
+nodo3356[label="id"] 
+nodo3355 -> nodo3356
+nodo3357[label="LISTA_VALORES"] 
+nodo3355 -> nodo3357
+nodo3351[label="1"] 
+nodo3357 -> nodo3351
+nodo3353[label="4"] 
+nodo3357 -> nodo3353
+nodo3364[label="SUMA"] 
+nodo3367 -> nodo3364
+nodo3360[label="4"] 
+nodo3364 -> nodo3360
+nodo3362[label="1"] 
+nodo3364 -> nodo3362
+nodo3372[label="LLAMADA_FUNC"] 
+nodo3514 -> nodo3372
+nodo3373[label="id"] 
+nodo3372 -> nodo3373
+nodo3374[label="LISTA_VALORES"] 
+nodo3372 -> nodo3374
+nodo3370[label="Esta es otra suma"] 
+nodo3374 -> nodo3370
+nodo3504[label="SWITCH"] 
+nodo3514 -> nodo3504
+nodo3505[label="EXPRESION"] 
+nodo3504 -> nodo3505
+nodo3506[label="SWITCH_CUERPO"] 
+nodo3504 -> nodo3506
+nodo3377[label="edad"] 
+nodo3505 -> nodo3377
+nodo3406[label="CASE"] 
+nodo3506 -> nodo3406
+nodo3407[label="EXPRESION"] 
+nodo3406 -> nodo3407
+nodo3379[label="18"] 
+nodo3407 -> nodo3379
+nodo3383[label="LLAMADA_FUNC"] 
+nodo3406 -> nodo3383
+nodo3384[label="id"] 
+nodo3383 -> nodo3384
+nodo3385[label="LISTA_VALORES"] 
+nodo3383 -> nodo3385
+nodo3381[label="mayoria de eddad en guatemala"] 
+nodo3385 -> nodo3381
+nodo3400[label="DEC_VAR"] 
+nodo3406 -> nodo3400
+nodo3401[label="Tipo 
+STRING"] 
+nodo3400 -> nodo3401
+nodo3402[label="id 
+v_5"] 
+nodo3400 -> nodo3402
+nodo3403[label="EXPRESION"] 
+nodo3400 -> nodo3403
+nodo3395[label="CASTEO"] 
+nodo3403 -> nodo3395
+nodo3396[label="Tipo Deseado 
+STRING"] 
+nodo3395 -> nodo3396
+nodo3397[label="Expresion"] 
+nodo3395 -> nodo3397
+nodo3392[label="SUMA"] 
+nodo3397 -> nodo3392
+nodo3388[label="hola"] 
+nodo3392 -> nodo3388
+nodo3390[label=" usac"] 
+nodo3392 -> nodo3390
+nodo3438[label="CASE"] 
+nodo3506 -> nodo3438
+nodo3439[label="EXPRESION"] 
+nodo3438 -> nodo3439
+nodo3411[label="21"] 
+nodo3439 -> nodo3411
+nodo3415[label="LLAMADA_FUNC"] 
+nodo3438 -> nodo3415
+nodo3416[label="id"] 
+nodo3415 -> nodo3416
+nodo3417[label="LISTA_VALORES"] 
+nodo3415 -> nodo3417
+nodo3413[label="mayoria de edad en us"] 
+nodo3417 -> nodo3413
+nodo3432[label="DEC_VAR"] 
+nodo3438 -> nodo3432
+nodo3433[label="Tipo 
+INT"] 
+nodo3432 -> nodo3433
+nodo3434[label="id 
+v_1"] 
+nodo3432 -> nodo3434
+nodo3435[label="EXPRESION"] 
+nodo3432 -> nodo3435
+nodo3427[label="CASTEO"] 
+nodo3435 -> nodo3427
+nodo3428[label="Tipo Deseado 
+INT"] 
+nodo3427 -> nodo3428
+nodo3429[label="Expresion"] 
+nodo3427 -> nodo3429
+nodo3424[label="SUMA"] 
+nodo3429 -> nodo3424
+nodo3420[label="12"] 
+nodo3424 -> nodo3420
+nodo3422[label="1"] 
+nodo3424 -> nodo3422
+nodo3507[label="Default"] 
+nodo3506 -> nodo3507
+nodo3465[label="ASIGNAR_VAR"] 
+nodo3507 -> nodo3465
+nodo3466[label="Id 
+var_3"] 
+nodo3465 -> nodo3466
+nodo3467[label="EXPRESION"] 
+nodo3465 -> nodo3467
+nodo3459[label="OP_TERNARIO"] 
+nodo3467 -> nodo3459
+nodo3460[label="CONDICON"] 
+nodo3459 -> nodo3460
+nodo3461[label="EXPRESION_1"] 
+nodo3459 -> nodo3461
+nodo3462[label="EXPRESION_2"] 
+nodo3459 -> nodo3462
+nodo3447[label="IGUALIGUAL"] 
+nodo3460 -> nodo3447
+nodo3443[label="usac"] 
+nodo3447 -> nodo3443
+nodo3445[label="usac"] 
+nodo3447 -> nodo3445
+nodo3450[label="1"] 
+nodo3461 -> nodo3450
+nodo3456[label="SUMA"] 
+nodo3462 -> nodo3456
+nodo3452[label="4"] 
+nodo3456 -> nodo3452
+nodo3454[label="5"] 
+nodo3456 -> nodo3454
+nodo3491[label="DEC_VAR"] 
+nodo3507 -> nodo3491
+nodo3492[label="Tipo 
+INT"] 
+nodo3491 -> nodo3492
+nodo3493[label="id 
+var_23"] 
+nodo3491 -> nodo3493
+nodo3494[label="EXPRESION"] 
+nodo3491 -> nodo3494
+nodo3485[label="OP_TERNARIO"] 
+nodo3494 -> nodo3485
+nodo3486[label="CONDICON"] 
+nodo3485 -> nodo3486
+nodo3487[label="EXPRESION_1"] 
+nodo3485 -> nodo3487
+nodo3488[label="EXPRESION_2"] 
+nodo3485 -> nodo3488
+nodo3473[label="IGUALIGUAL"] 
+nodo3486 -> nodo3473
+nodo3469[label="usac"] 
+nodo3473 -> nodo3469
+nodo3471[label="usac"] 
+nodo3473 -> nodo3471
+nodo3476[label="1"] 
+nodo3487 -> nodo3476
+nodo3482[label="SUMA"] 
+nodo3488 -> nodo3482
+nodo3478[label="4"] 
+nodo3482 -> nodo3478
+nodo3480[label="5"] 
+nodo3482 -> nodo3480
+nodo3547[label="DEC_VAR"] 
+nodo3610 -> nodo3547
+nodo3548[label="Tipo 
+BOOLEAN"] 
+nodo3547 -> nodo3548
+nodo3549[label="id 
+v_1"] 
+nodo3547 -> nodo3549
+nodo3550[label="EXPRESION"] 
+nodo3547 -> nodo3550
+nodo3542[label="CASTEO"] 
+nodo3550 -> nodo3542
+nodo3543[label="Tipo Deseado 
+BOOLEAN"] 
+nodo3542 -> nodo3543
+nodo3544[label="Expresion"] 
+nodo3542 -> nodo3544
+nodo3539[label="SUMA"] 
+nodo3544 -> nodo3539
+nodo3529[label="MULTIPLICACION"] 
+nodo3539 -> nodo3529
+nodo3525[label="12"] 
+nodo3529 -> nodo3525
+nodo3527[label="8"] 
+nodo3529 -> nodo3527
+nodo3536[label="MULTIPLICACION"] 
+nodo3539 -> nodo3536
+nodo3532[label="5"] 
+nodo3536 -> nodo3532
+nodo3534[label="8"] 
+nodo3536 -> nodo3534
+nodo3559[label="DEC_VAR"] 
+nodo3610 -> nodo3559
+nodo3560[label="Tipo 
+STRING"] 
+nodo3559 -> nodo3560
+nodo3561[label="id 
+resultado"] 
+nodo3559 -> nodo3561
+nodo3562[label="EXPRESION"] 
+nodo3559 -> nodo3562
+nodo3556[label="MULTIPLICACION"] 
+nodo3562 -> nodo3556
+nodo3552[label="numero1"] 
+nodo3556 -> nodo3552
+nodo3554[label="numero2"] 
+nodo3556 -> nodo3554
+nodo3566[label="RETURN"] 
+nodo3610 -> nodo3566
+nodo3564[label="resultado"] 
+nodo3566 -> nodo3564
+nodo3602[label="RETURN"] 
+nodo3610 -> nodo3602
+nodo3599[label="SUMA"] 
+nodo3602 -> nodo3599
+nodo3594[label="RESTA"] 
+nodo3599 -> nodo3594
+nodo3584[label="SUMA"] 
+nodo3594 -> nodo3584
+nodo3570[label="4"] 
+nodo3584 -> nodo3570
+nodo3581[label="DIVISION"] 
+nodo3584 -> nodo3581
+nodo3576[label="MULTIPLICACION"] 
+nodo3581 -> nodo3576
+nodo3572[label="5"] 
+nodo3576 -> nodo3572
+nodo3574[label="8"] 
+nodo3576 -> nodo3574
+nodo3579[label="9"] 
+nodo3581 -> nodo3579
+nodo3591[label="DIVISION"] 
+nodo3594 -> nodo3591
+nodo3587[label="18"] 
+nodo3591 -> nodo3587
+nodo3589[label="1"] 
+nodo3591 -> nodo3589
+nodo3597[label="1"] 
+nodo3599 -> nodo3597
+nodo3987[label="DEC_METODO"] 
+nodo0 -> nodo3987
+nodo3988[label="Tipo Retorno 
 Void"] 
-nodo156 -> nodo157
-nodo158[label="Nombre 
-main"] 
-nodo156 -> nodo158
-nodo160[label="LISTA_INS"] 
-nodo156 -> nodo160
-nodo136[label="IMPRIMIR"] 
-nodo160 -> nodo136
-nodo133[label="SUMA"] 
-nodo136 -> nodo133
-nodo129[label="5"] 
-nodo133 -> nodo129
-nodo131[label="false"] 
-nodo133 -> nodo131
-nodo146[label="DEC_VAR"] 
-nodo160 -> nodo146
-nodo147[label="Tipo 
+nodo3987 -> nodo3988
+nodo3989[label="Nombre 
+saludo"] 
+nodo3987 -> nodo3989
+nodo3990[label="LISTA_PARAMS"] 
+nodo3987 -> nodo3990
+nodo3991[label="LISTA_INS"] 
+nodo3987 -> nodo3991
+nodo3977[label="DO_WHILE"] 
+nodo3991 -> nodo3977
+nodo3978[label="LISTA_INS"] 
+nodo3977 -> nodo3978
+nodo3979[label="CONDICION"] 
+nodo3977 -> nodo3979
+nodo3974[label="IGUALIGUAL"] 
+nodo3979 -> nodo3974
+nodo3965[label="lenguaje"] 
+nodo3974 -> nodo3965
+nodo3971[label="SUMA"] 
+nodo3974 -> nodo3971
+nodo3967[label="Type"] 
+nodo3971 -> nodo3967
+nodo3969[label="Script"] 
+nodo3971 -> nodo3969
+nodo3633[label="ASIGNAR_VAR"] 
+nodo3978 -> nodo3633
+nodo3634[label="Id 
+var_3"] 
+nodo3633 -> nodo3634
+nodo3635[label="EXPRESION"] 
+nodo3633 -> nodo3635
+nodo3630[label="NOIGUAL"] 
+nodo3635 -> nodo3630
+nodo3620[label="SUMA"] 
+nodo3630 -> nodo3620
+nodo3616[label="compi 1 "] 
+nodo3620 -> nodo3616
+nodo3618[label=" usac"] 
+nodo3620 -> nodo3618
+nodo3627[label="SUMA"] 
+nodo3630 -> nodo3627
+nodo3623[label="compi "] 
+nodo3627 -> nodo3623
+nodo3625[label="1"] 
+nodo3627 -> nodo3625
+nodo3664[label="ASIGNAR_VAR"] 
+nodo3978 -> nodo3664
+nodo3665[label="Id 
+var_3"] 
+nodo3664 -> nodo3665
+nodo3666[label="EXPRESION"] 
+nodo3664 -> nodo3666
+nodo3658[label="OP_TERNARIO"] 
+nodo3666 -> nodo3658
+nodo3659[label="CONDICON"] 
+nodo3658 -> nodo3659
+nodo3660[label="EXPRESION_1"] 
+nodo3658 -> nodo3660
+nodo3661[label="EXPRESION_2"] 
+nodo3658 -> nodo3661
+nodo3646[label="MAYOR"] 
+nodo3659 -> nodo3646
+nodo3641[label="SUMA"] 
+nodo3646 -> nodo3641
+nodo3637[label="5"] 
+nodo3641 -> nodo3637
+nodo3639[label="6"] 
+nodo3641 -> nodo3639
+nodo3644[label="48"] 
+nodo3646 -> nodo3644
+nodo3653[label="SUMA"] 
+nodo3660 -> nodo3653
+nodo3649[label="1"] 
+nodo3653 -> nodo3649
+nodo3651[label="1"] 
+nodo3653 -> nodo3651
+nodo3656[label="45"] 
+nodo3661 -> nodo3656
+nodo3955[label="DO_WHILE"] 
+nodo3978 -> nodo3955
+nodo3956[label="LISTA_INS"] 
+nodo3955 -> nodo3956
+nodo3957[label="CONDICION"] 
+nodo3955 -> nodo3957
+nodo3952[label="IGUALIGUAL"] 
+nodo3957 -> nodo3952
+nodo3943[label="lenguaje"] 
+nodo3952 -> nodo3943
+nodo3949[label="SUMA"] 
+nodo3952 -> nodo3949
+nodo3945[label="Type"] 
+nodo3949 -> nodo3945
+nodo3947[label="Script"] 
+nodo3949 -> nodo3947
+nodo3854[label="WHILE"] 
+nodo3956 -> nodo3854
+nodo3855[label="CONDICION"] 
+nodo3854 -> nodo3855
+nodo3856[label="LISTA_INS"] 
+nodo3854 -> nodo3856
+nodo3672[label="MENOR"] 
+nodo3855 -> nodo3672
+nodo3668[label="edad"] 
+nodo3672 -> nodo3668
+nodo3670[label="100"] 
+nodo3672 -> nodo3670
+nodo3682[label="LLAMADA_FUNC"] 
+nodo3856 -> nodo3682
+nodo3683[label="id"] 
+nodo3682 -> nodo3683
+nodo3684[label="LISTA_VALORES"] 
+nodo3682 -> nodo3684
+nodo3679[label="SUMA"] 
+nodo3684 -> nodo3679
+nodo3675[label="Hola "] 
+nodo3679 -> nodo3675
+nodo3677[label="nombre"] 
+nodo3679 -> nodo3677
+nodo3689[label="LLAMADA_FUNC"] 
+nodo3856 -> nodo3689
+nodo3690[label="id"] 
+nodo3689 -> nodo3690
+nodo3691[label="LISTA_VALORES"] 
+nodo3689 -> nodo3691
+nodo3687[label="Segundo semestre 2022"] 
+nodo3691 -> nodo3687
+nodo3694[label="INCREMENTO
+edad"] 
+nodo3856 -> nodo3694
+nodo3850[label="SENTENCIA_IF"] 
+nodo3856 -> nodo3850
+nodo3732[label="IF_SIMPLE"] 
+nodo3850 -> nodo3732
+nodo3733[label="CONDICION"] 
+nodo3732 -> nodo3733
+nodo3734[label="LISTA_INS"] 
+nodo3732 -> nodo3734
+nodo3721[label="AND"] 
+nodo3733 -> nodo3721
+nodo3706[label="IGUALIGUAL"] 
+nodo3721 -> nodo3706
+nodo3699[label="LLAMADA_FUNC"] 
+nodo3706 -> nodo3699
+nodo3700[label="id"] 
+nodo3699 -> nodo3700
+nodo3701[label="LISTA_VALORES"] 
+nodo3699 -> nodo3701
+nodo3695[label="1"] 
+nodo3701 -> nodo3695
+nodo3697[label="2"] 
+nodo3701 -> nodo3697
+nodo3704[label="3"] 
+nodo3706 -> nodo3704
+nodo3718[label="IGUALIGUAL"] 
+nodo3721 -> nodo3718
+nodo3713[label="SUMA"] 
+nodo3718 -> nodo3713
+nodo3709[label="45"] 
+nodo3713 -> nodo3709
+nodo3711[label="56"] 
+nodo3713 -> nodo3711
+nodo3716[label="12"] 
+nodo3718 -> nodo3716
+nodo3726[label="LLAMADA_FUNC"] 
+nodo3734 -> nodo3726
+nodo3727[label="id"] 
+nodo3726 -> nodo3727
+nodo3728[label="LISTA_VALORES"] 
+nodo3726 -> nodo3728
+nodo3724[label="Esta bien"] 
+nodo3728 -> nodo3724
+nodo3731[label="DECREMENTO
+var_1"] 
+nodo3734 -> nodo3731
+nodo3783[label="ELSE_IF"] 
+nodo3850 -> nodo3783
+nodo3784[label="CONDICION"] 
+nodo3783 -> nodo3784
+nodo3785[label="LISTA_INS"] 
+nodo3783 -> nodo3785
+nodo3761[label="OR"] 
+nodo3784 -> nodo3761
+nodo3751[label="IGUALIGUAL"] 
+nodo3761 -> nodo3751
+nodo3744[label="LLAMADA_FUNC"] 
+nodo3751 -> nodo3744
+nodo3745[label="id"] 
+nodo3744 -> nodo3745
+nodo3746[label="LISTA_VALORES"] 
+nodo3744 -> nodo3746
+nodo3740[label="1"] 
+nodo3746 -> nodo3740
+nodo3742[label="3"] 
+nodo3746 -> nodo3742
+nodo3749[label="4"] 
+nodo3751 -> nodo3749
+nodo3758[label="IGUALIGUAL"] 
+nodo3761 -> nodo3758
+nodo3754[label="Universidad"] 
+nodo3758 -> nodo3754
+nodo3756[label="usac"] 
+nodo3758 -> nodo3756
+nodo3766[label="LLAMADA_FUNC"] 
+nodo3785 -> nodo3766
+nodo3767[label="id"] 
+nodo3766 -> nodo3767
+nodo3768[label="LISTA_VALORES"] 
+nodo3766 -> nodo3768
+nodo3764[label="Esta es otra suma"] 
+nodo3768 -> nodo3764
+nodo3778[label="DEC_VAR"] 
+nodo3785 -> nodo3778
+nodo3779[label="Tipo 
 BOOLEAN"] 
-nodo146 -> nodo147
-nodo148[label="id 
-boolChar"] 
-nodo146 -> nodo148
-nodo149[label="EXPRESION"] 
-nodo146 -> nodo149
-nodo141[label="CASTEO"] 
-nodo149 -> nodo141
-nodo142[label="Tipo Deseado 
+nodo3778 -> nodo3779
+nodo3780[label="id 
+v_4"] 
+nodo3778 -> nodo3780
+nodo3781[label="EXPRESION"] 
+nodo3778 -> nodo3781
+nodo3773[label="CASTEO"] 
+nodo3781 -> nodo3773
+nodo3774[label="Tipo Deseado 
 BOOLEAN"] 
-nodo141 -> nodo142
-nodo143[label="Expresion"] 
-nodo141 -> nodo143
-nodo139[label="0"] 
-nodo143 -> nodo139
-nodo153[label="IMPRIMIR"] 
-nodo160 -> nodo153
-nodo151[label="boolChar"] 
-nodo153 -> nodo151
+nodo3773 -> nodo3774
+nodo3775[label="Expresion"] 
+nodo3773 -> nodo3775
+nodo3771[label="A"] 
+nodo3775 -> nodo3771
+nodo3818[label="ELSE_IF"] 
+nodo3850 -> nodo3818
+nodo3819[label="CONDICION"] 
+nodo3818 -> nodo3819
+nodo3820[label="LISTA_INS"] 
+nodo3818 -> nodo3820
+nodo3808[label="MAYOR"] 
+nodo3819 -> nodo3808
+nodo3796[label="LLAMADA_FUNC"] 
+nodo3808 -> nodo3796
+nodo3797[label="id"] 
+nodo3796 -> nodo3797
+nodo3798[label="LISTA_VALORES"] 
+nodo3796 -> nodo3798
+nodo3792[label="1"] 
+nodo3798 -> nodo3792
+nodo3794[label="4"] 
+nodo3798 -> nodo3794
+nodo3805[label="SUMA"] 
+nodo3808 -> nodo3805
+nodo3801[label="4"] 
+nodo3805 -> nodo3801
+nodo3803[label="1"] 
+nodo3805 -> nodo3803
+nodo3813[label="LLAMADA_FUNC"] 
+nodo3820 -> nodo3813
+nodo3814[label="id"] 
+nodo3813 -> nodo3814
+nodo3815[label="LISTA_VALORES"] 
+nodo3813 -> nodo3815
+nodo3811[label="Esta es otra suma"] 
+nodo3815 -> nodo3811
+nodo3851[label="ELSE"] 
+nodo3850 -> nodo3851
+nodo3827[label="INCREMENTO
+var_1"] 
+nodo3851 -> nodo3827
+nodo3840[label="DEC_VAR"] 
+nodo3851 -> nodo3840
+nodo3841[label="Tipo 
+BOOLEAN"] 
+nodo3840 -> nodo3841
+nodo3842[label="id 
+v_3"] 
+nodo3840 -> nodo3842
+nodo3843[label="EXPRESION"] 
+nodo3840 -> nodo3843
+nodo3835[label="CASTEO"] 
+nodo3843 -> nodo3835
+nodo3836[label="Tipo Deseado 
+BOOLEAN"] 
+nodo3835 -> nodo3836
+nodo3837[label="Expresion"] 
+nodo3835 -> nodo3837
+nodo3832[label="IGUALIGUAL"] 
+nodo3837 -> nodo3832
+nodo3828[label="true"] 
+nodo3832 -> nodo3828
+nodo3830[label="true"] 
+nodo3832 -> nodo3830
+nodo3931[label="FOR"] 
+nodo3956 -> nodo3931
+nodo3864[label="DEC_VAR"] 
+nodo3931 -> nodo3864
+nodo3865[label="Tipo 
+INT"] 
+nodo3864 -> nodo3865
+nodo3866[label="id 
+x"] 
+nodo3864 -> nodo3866
+nodo3867[label="EXPRESION"] 
+nodo3864 -> nodo3867
+nodo3862[label="0"] 
+nodo3867 -> nodo3862
+nodo3933[label="CONDICION"] 
+nodo3931 -> nodo3933
+nodo3934[label="ACTUALIZACION"] 
+nodo3931 -> nodo3934
+nodo3935[label="LISTA_INS"] 
+nodo3931 -> nodo3935
+nodo3878[label="MENOR"] 
+nodo3933 -> nodo3878
+nodo3869[label="x"] 
+nodo3878 -> nodo3869
+nodo3875[label="SUMA"] 
+nodo3878 -> nodo3875
+nodo3871[label="45"] 
+nodo3875 -> nodo3871
+nodo3873[label="8"] 
+nodo3875 -> nodo3873
+nodo3881[label="INCREMENTO
+x"] 
+nodo3934 -> nodo3881
+nodo3919[label="ASIGNAR_VAR"] 
+nodo3935 -> nodo3919
+nodo3920[label="Id 
+var_3"] 
+nodo3919 -> nodo3920
+nodo3921[label="EXPRESION"] 
+nodo3919 -> nodo3921
+nodo3913[label="OP_TERNARIO"] 
+nodo3921 -> nodo3913
+nodo3914[label="CONDICON"] 
+nodo3913 -> nodo3914
+nodo3915[label="EXPRESION_1"] 
+nodo3913 -> nodo3915
+nodo3916[label="EXPRESION_2"] 
+nodo3913 -> nodo3916
+nodo3901[label="MAYOR"] 
+nodo3914 -> nodo3901
+nodo3886[label="SUMA"] 
+nodo3901 -> nodo3886
+nodo3882[label="5"] 
+nodo3886 -> nodo3882
+nodo3884[label="6"] 
+nodo3886 -> nodo3884
+nodo3898[label="SUMA"] 
+nodo3901 -> nodo3898
+nodo3889[label="48"] 
+nodo3898 -> nodo3889
+nodo3895[label="DIVISION"] 
+nodo3898 -> nodo3895
+nodo3891[label="9"] 
+nodo3895 -> nodo3891
+nodo3893[label="8"] 
+nodo3895 -> nodo3893
+nodo3904[label="1"] 
+nodo3915 -> nodo3904
+nodo3910[label="SUMA"] 
+nodo3916 -> nodo3910
+nodo3906[label="4"] 
+nodo3910 -> nodo3906
+nodo3908[label="5"] 
+nodo3910 -> nodo3908
+nodo3926[label="LLAMADA_FUNC"] 
+nodo3935 -> nodo3926
+nodo3927[label="id"] 
+nodo3926 -> nodo3927
+nodo3928[label="LISTA_VALORES"] 
+nodo3926 -> nodo3928
+nodo3924[label="Hola mundo!!!"] 
+nodo3928 -> nodo3924
+nodo4003[label="DEC_METODO"] 
+nodo0 -> nodo4003
+nodo4004[label="Tipo Retorno 
+Void"] 
+nodo4003 -> nodo4004
+nodo4005[label="Nombre 
+ImprimirArrayCiclico"] 
+nodo4003 -> nodo4005
+nodo4007[label="LISTA_INS"] 
+nodo4003 -> nodo4007
+nodo3998[label="LLAMADA_FUNC"] 
+nodo4007 -> nodo3998
+nodo3999[label="id"] 
+nodo3998 -> nodo3999
+nodo4000[label="LISTA_VALORES"] 
+nodo3998 -> nodo4000
+nodo3996[label="No tengo fors pana perdon :c"] 
+nodo4000 -> nodo3996
+nodo4070[label="DEC_FUNCION"] 
+nodo0 -> nodo4070
+nodo4071[label="Tipo Retorno 
+INT"] 
+nodo4070 -> nodo4071
+nodo4072[label="Nombre 
+fibonacci_recursivo"] 
+nodo4070 -> nodo4072
+nodo4073[label="LISTA_PARAMS"] 
+nodo4070 -> nodo4073
+nodo4074[label="LISTA_INS"] 
+nodo4070 -> nodo4074
+nodo4035[label="SENTENCIA_IF"] 
+nodo4074 -> nodo4035
+nodo4027[label="IF_SIMPLE"] 
+nodo4035 -> nodo4027
+nodo4028[label="CONDICION"] 
+nodo4027 -> nodo4028
+nodo4029[label="LISTA_INS"] 
+nodo4027 -> nodo4029
+nodo4018[label="MENOR"] 
+nodo4028 -> nodo4018
+nodo4014[label="valor"] 
+nodo4018 -> nodo4014
+nodo4016[label="2"] 
+nodo4018 -> nodo4016
+nodo4023[label="RETURN"] 
+nodo4029 -> nodo4023
+nodo4021[label="valor"] 
+nodo4023 -> nodo4021
+nodo4066[label="RETURN"] 
+nodo4074 -> nodo4066
+nodo4063[label="SUMA"] 
+nodo4066 -> nodo4063
+nodo4046[label="LLAMADA_FUNC"] 
+nodo4063 -> nodo4046
+nodo4047[label="id"] 
+nodo4046 -> nodo4047
+nodo4048[label="LISTA_VALORES"] 
+nodo4046 -> nodo4048
+nodo4043[label="RESTA"] 
+nodo4048 -> nodo4043
+nodo4039[label="valor"] 
+nodo4043 -> nodo4039
+nodo4041[label="1"] 
+nodo4043 -> nodo4041
+nodo4058[label="LLAMADA_FUNC"] 
+nodo4063 -> nodo4058
+nodo4059[label="id"] 
+nodo4058 -> nodo4059
+nodo4060[label="LISTA_VALORES"] 
+nodo4058 -> nodo4060
+nodo4055[label="RESTA"] 
+nodo4060 -> nodo4055
+nodo4051[label="valor"] 
+nodo4055 -> nodo4051
+nodo4053[label="2"] 
+nodo4055 -> nodo4053
+nodo4169[label="DEC_FUNCION"] 
+nodo0 -> nodo4169
+nodo4170[label="Tipo Retorno 
+INT"] 
+nodo4169 -> nodo4170
+nodo4171[label="Nombre 
+fibonacci_ciclico"] 
+nodo4169 -> nodo4171
+nodo4172[label="LISTA_PARAMS"] 
+nodo4169 -> nodo4172
+nodo4173[label="LISTA_INS"] 
+nodo4169 -> nodo4173
+nodo4082[label="DEC_VAR"] 
+nodo4173 -> nodo4082
+nodo4083[label="Tipo 
+INT"] 
+nodo4082 -> nodo4083
+nodo4084[label="id 
+actual"] 
+nodo4082 -> nodo4084
+nodo4085[label="EXPRESION"] 
+nodo4082 -> nodo4085
+nodo4080[label="0"] 
+nodo4085 -> nodo4080
+nodo4089[label="DEC_VAR"] 
+nodo4173 -> nodo4089
+nodo4090[label="Tipo 
+INT"] 
+nodo4089 -> nodo4090
+nodo4091[label="id 
+siguiente"] 
+nodo4089 -> nodo4091
+nodo4092[label="EXPRESION"] 
+nodo4089 -> nodo4092
+nodo4087[label="1"] 
+nodo4092 -> nodo4087
+nodo4096[label="DEC_VAR"] 
+nodo4173 -> nodo4096
+nodo4097[label="Tipo 
+INT"] 
+nodo4096 -> nodo4097
+nodo4098[label="id 
+temporal"] 
+nodo4096 -> nodo4098
+nodo4099[label="EXPRESION"] 
+nodo4096 -> nodo4099
+nodo4094[label="0"] 
+nodo4099 -> nodo4094
+nodo4151[label="FOR"] 
+nodo4173 -> nodo4151
+nodo4103[label="DEC_VAR"] 
+nodo4151 -> nodo4103
+nodo4104[label="Tipo 
+INT"] 
+nodo4103 -> nodo4104
+nodo4105[label="id 
+i"] 
+nodo4103 -> nodo4105
+nodo4106[label="EXPRESION"] 
+nodo4103 -> nodo4106
+nodo4101[label="0"] 
+nodo4106 -> nodo4101
+nodo4153[label="CONDICION"] 
+nodo4151 -> nodo4153
+nodo4154[label="ACTUALIZACION"] 
+nodo4151 -> nodo4154
+nodo4155[label="LISTA_INS"] 
+nodo4151 -> nodo4155
+nodo4117[label="MENOR"] 
+nodo4153 -> nodo4117
+nodo4108[label="i"] 
+nodo4117 -> nodo4108
+nodo4114[label="SUMA"] 
+nodo4117 -> nodo4114
+nodo4110[label="posicion"] 
+nodo4114 -> nodo4110
+nodo4112[label="1"] 
+nodo4114 -> nodo4112
+nodo4120[label="INCREMENTO
+i"] 
+nodo4154 -> nodo4120
+nodo4123[label="LLAMADA_FUNC"] 
+nodo4155 -> nodo4123
+nodo4124[label="id"] 
+nodo4123 -> nodo4124
+nodo4125[label="LISTA_VALORES"] 
+nodo4123 -> nodo4125
+nodo4121[label="actual"] 
+nodo4125 -> nodo4121
+nodo4130[label="ASIGNAR_VAR"] 
+nodo4155 -> nodo4130
+nodo4131[label="Id 
+temporal"] 
+nodo4130 -> nodo4131
+nodo4132[label="EXPRESION"] 
+nodo4130 -> nodo4132
+nodo4128[label="actual"] 
+nodo4132 -> nodo4128
+nodo4136[label="ASIGNAR_VAR"] 
+nodo4155 -> nodo4136
+nodo4137[label="Id 
+actual"] 
+nodo4136 -> nodo4137
+nodo4138[label="EXPRESION"] 
+nodo4136 -> nodo4138
+nodo4134[label="siguiente"] 
+nodo4138 -> nodo4134
+nodo4147[label="ASIGNAR_VAR"] 
+nodo4155 -> nodo4147
+nodo4148[label="Id 
+siguiente"] 
+nodo4147 -> nodo4148
+nodo4149[label="EXPRESION"] 
+nodo4147 -> nodo4149
+nodo4144[label="SUMA"] 
+nodo4149 -> nodo4144
+nodo4140[label="siguiente"] 
+nodo4144 -> nodo4140
+nodo4142[label="temporal"] 
+nodo4144 -> nodo4142
+nodo4165[label="RETURN"] 
+nodo4173 -> nodo4165
+nodo4163[label="temporal"] 
+nodo4165 -> nodo4163
 }
